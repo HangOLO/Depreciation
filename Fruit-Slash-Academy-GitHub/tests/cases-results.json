@@ -1,0 +1,29 @@
+{
+  "passed": 22,
+  "checks": [
+    "straight: one case fact at a time, with no automatic progress or countdown",
+    "straight: clicks, short drags, misses and corner brushes stay on the card",
+    "straight: resize preserves the current case and its cut target fits the phone screen",
+    "straight: one held gesture cannot dismiss two successive case cards",
+    "straight: pausing freezes the card cut animation until resumed",
+    "straight: cutting the final case card opens the minimal learning page and the first year slices correctly",
+    "straight: replay presents the case background again from its first card",
+    "reducing: one case fact at a time, with no automatic progress or countdown",
+    "reducing: clicks, short drags, misses and corner brushes stay on the card",
+    "reducing: resize preserves the current case and its cut target fits the phone screen",
+    "reducing: one held gesture cannot dismiss two successive case cards",
+    "reducing: pausing freezes the card cut animation until resumed",
+    "reducing: cutting the final case card opens the minimal learning page and the first year slices correctly",
+    "reducing: replay presents the case background again from its first card",
+    "usage: one case fact at a time, with no automatic progress or countdown",
+    "usage: clicks, short drags, misses and corner brushes stay on the card",
+    "usage: resize preserves the current case and its cut target fits the phone screen",
+    "usage: one held gesture cannot dismiss two successive case cards",
+    "usage: pausing freezes the card cut animation until resumed",
+    "usage: cutting the final case card opens the minimal learning page and the first year slices correctly",
+    "usage: replay presents the case background again from its first card",
+    "All case and lesson paths work offline without JavaScript errors or network requests"
+  ],
+  "errors": [],
+  "externalRequests": []
+}

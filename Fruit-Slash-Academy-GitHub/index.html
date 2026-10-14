@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#211b36">
+  <meta name="description" content="折舊切切樂：香港中五 BAFS 會計水果切割遊戲。先自由切水果，再動手學三種折舊方法。">
+  <title>折舊切切樂 · Fruit Slash Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="accounting.js" defer></script>
+  <script src="fruit-art.js" defer></script>
+  <script src="ui-art.js" defer></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="折舊切切樂主頁">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 15a19 19 0 0 0 32 18L8 15Z" fill="#88e0ad"/><path d="M12 17a15 15 0 0 0 25 13L12 17Z" fill="#ff8071"/><path d="m20 26 1 4m6-1 1 4m-1-12 1 3" stroke="#172136" stroke-width="2.4" stroke-linecap="round"/><path d="m29 7-4 8M37 10l-5 5" stroke="#fff3c9" stroke-width="3" stroke-linecap="round"/></svg></span>
+        <span class="brand-text">折舊切切樂<small>FRUIT SLASH ACADEMY</small></span>
+      </a>
+      <div class="header-tools">
+        <span class="subject-label">中五 BAFS · 會計單元</span>
+        <button class="icon-button" id="soundBtn" type="button" title="切換音效" aria-label="切換音效" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4V9Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M16 8c2 2 2 6 0 8m3-11c4 4 4 10 0 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+        <button class="settings-button" id="settingsBtn" type="button"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 3-.6 2.2-2 .9-2-.7L2 10l1.7 1.5v2L2 15l2.4 4.6 2-.7 2 .9L9 22h6l.6-2.2 2-.9 2 .7L22 15l-1.7-1.5v-2L22 10l-2.4-4.6-2 .7-2-.9L15 3H9Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="12.5" r="3" stroke="currentColor" stroke-width="1.5"/></svg>教師設定</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="menuScreen" class="screen menu-screen" aria-label="遊戲模式選單">
+        <div class="menu-intro">
+          <div class="intro-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span>先玩，後學 · BAFS 會計</div>
+            <h1>一刀切開，<br>學識<span class="coral-word">折舊</span><span class="title-dot">。</span></h1>
+            <p class="intro-description">由第一刀開始，玩懂三種折舊方法。</p>
+            <div class="hero-how"><span class="hero-gesture" aria-hidden="true">↗</span><span>按住 · 劃過 · 切開</span><span class="hero-device">滑鼠 / 手指 / 觸控筆</span></div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <canvas id="heroCanvas" width="620" height="360"></canvas>
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <div><span class="small-label">CHOOSE YOUR SLICE</span><h2>揀一種切法。</h2></div>
+          <span class="progress-note" id="menuNote"><span class="status-dot"></span>完成自由切，先解鎖直線法</span>
+        </div>
+
+        <div class="mode-grid">
+          <button class="mode-card free-card is-unlocked" data-mode="free" type="button" aria-label="開始自由切水果">
+            <div class="card-topline"><span class="mode-number">00 <span>熱身</span></span><span class="card-status">已開放</span></div>
+            <div class="card-art"><span class="art-orbit"></span><canvas data-fruit="watermelon" width="300" height="190" aria-hidden="true"></canvas><span class="art-spark spark-a"></span><span class="art-spark spark-b"></span><span class="art-slash"></span></div>
+            <div class="card-copy"><span class="card-kicker">切得爽，連擊高</span><h3>自由切水果</h3><p>水果 +10 分 · 炸彈 −50 分</p></div>
+            <span class="card-action">開始切水果 <span aria-hidden="true">↗</span></span>
+          </button>
+
+          <button class="mode-card straight-card locked" data-mode="straight" type="button" disabled aria-label="直線法，目前鎖定">
+            <div class="card-topline"><span class="mode-number">01 <span>平均切</span></span><span class="card-status">未解鎖</span></div>
+            <div class="card-art"><span class="art-orbit"></span><canvas data-fruit="watermelon" width="300" height="190" aria-hidden="true"></canvas><div class="slice-guides" aria-hidden="true"><i></i><i></i><i></i></div></div>
+            <div class="card-copy"><span class="card-kicker">每年一樣多</span><h3>直線法</h3><p>平均四份，每年折舊相同。</p></div>
+            <span class="card-action"><svg class="lock-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4.5" y="8" width="11" height="8.5" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 8V5a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.5"/><path d="M10 11.5v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>完成熱身後解鎖</span>
+          </button>
+
+          <button class="mode-card reducing-card locked" data-mode="reducing" type="button" disabled aria-label="餘額遞減法，目前鎖定">
+            <div class="card-topline"><span class="mode-number">02 <span>遞減切</span></span><span class="card-status">未解鎖</span></div>
+            <div class="card-art"><span class="art-orbit"></span><canvas data-fruit="banana" width="300" height="190" aria-hidden="true"></canvas><span class="small-ratio" aria-hidden="true">40%</span></div>
+            <div class="card-copy"><span class="card-kicker">先遞減，最後切清</span><h3>餘額遞減法</h3><p>五年切法，最後一年切清。</p></div>
+            <span class="card-action"><svg class="lock-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4.5" y="8" width="11" height="8.5" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 8V5a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.5"/><path d="M10 11.5v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>先完成直線法</span>
+          </button>
+
+          <button class="mode-card usage-card locked" data-mode="usage" type="button" disabled aria-label="按使用量法，目前鎖定">
+            <div class="card-topline"><span class="mode-number">03 <span>按量切</span></span><span class="card-status">未解鎖</span></div>
+            <div class="card-art"><span class="art-orbit"></span><canvas data-fruit="pineapple" width="300" height="190" aria-hidden="true"></canvas><span class="factory-stripe" aria-hidden="true"></span></div>
+            <div class="card-copy"><span class="card-kicker">用幾多，切幾多</span><h3>按使用量法</h3><p>接訂單，按實際用量切。</p></div>
+            <span class="card-action"><svg class="lock-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4.5" y="8" width="11" height="8.5" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 8V5a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.5"/><path d="M10 11.5v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>先完成直線法</span>
+          </button>
+        </div>
+        <div class="menu-bottom"><p><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 17 8-8m-5 0h5v5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 4c-2 1-4 1-7 0S5 4 4 8s-1 8 2 11 7 2 10 0 5-5 4-9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>一刀劃過多個水果，Combo 更高！</p><span id="bestScore" class="best-score">準備好你的第一刀</span></div>
+      </section>
+
+      <section id="playScreen" class="screen play-screen hidden" aria-label="遊戲進行中">
+        <div class="game-topbar">
+          <button id="homeBtn" class="secondary-button back-button" type="button"><span aria-hidden="true">←</span> 主選單</button>
+          <div class="game-mode"><span class="small-label">NOW PLAYING</span><h2 id="modeTitle">自由切水果</h2></div>
+          <div class="game-tools"><button id="playSoundBtn" class="icon-button" type="button" aria-label="切換音效" title="切換音效" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4V9Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M16 8c2 2 2 6 0 8m3-11c4 4 4 10 0 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button><button id="pauseBtn" class="secondary-button pause-button" type="button"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3" y="2" width="3" height="12" rx="1"/><rect x="10" y="2" width="3" height="12" rx="1"/></svg>暫停</button></div>
+        </div>
+        <div class="game-layout">
+          <div class="game-stage">
+            <div class="game-hud"><div class="task-block"><span class="hud-label">目前任務</span><p id="taskText">按住並滑動，盡情切開水果！</p></div><div class="stat-block"><span id="statLabel" class="hud-label">得分</span><strong id="statValue">0</strong></div></div>
+            <div class="progress-track" role="progressbar" aria-label="回合進度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progressFill" class="progress-fill"></div></div>
+            <div id="canvasWrap" class="canvas-wrap"><canvas id="gameCanvas" aria-label="水果切割遊戲區域：按住手指、觸控筆或滑鼠，並滑動切割。"></canvas><div id="caseCaption" class="case-caption hidden" aria-live="polite" aria-atomic="true"></div><div id="gameOverlay" class="game-overlay hidden" aria-live="polite"></div></div>
+            <div class="game-hint" id="gameHint"><span class="hint-line" aria-hidden="true"></span>按住 → 滑動 → 切開</div>
+          </div>
+          <aside id="factPanel" class="fact-panel" aria-label="遊戲提示"></aside>
+        </div>
+      </section>
+
+      <section id="resultScreen" class="screen result-screen hidden" aria-label="本回合結果">
+        <div id="resultContent" class="result-content" aria-live="polite"></div>
+        <div class="result-actions"><button id="replayBtn" class="secondary-button" type="button">再切一次 <span aria-hidden="true">↻</span></button><button id="resultMenuBtn" class="primary-button" type="button">開始切法挑戰 <span aria-hidden="true">↗</span></button></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>水果代表帳面價值；切下部分代表折舊費用。</span><span class="footer-right">原創水果 · 指尖學習 · 離線可玩</span></footer>
+  </div>
+
+  <dialog id="settingsDialog" class="settings-dialog" aria-labelledby="settingsTitle">
+    <div class="dialog-heading"><div><span class="small-label">FOR THE CLASSROOM</span><h2 id="settingsTitle">教師設定</h2></div><button id="closeSettingsBtn" class="icon-button close-button" type="button" aria-label="關閉教師設定">×</button></div>
+    <p class="dialog-description">按課堂節奏調整，讓學生先玩，再學。</p>
+    <label class="setting-row" for="durationSetting"><span><strong>自由切水果時間</strong><small>預設 35 秒；完成整個回合解鎖直線法。</small></span><select id="durationSetting"><option value="20">20 秒</option><option value="35" selected>35 秒</option><option value="60">60 秒</option></select></label>
+    <label class="setting-row" for="soundSetting"><span><strong>音效</strong><small>切割、連擊及解鎖音效。</small></span><input id="soundSetting" type="checkbox" role="switch" checked></label>
+    <label class="setting-row" for="hintsSetting"><span><strong>切割提示</strong><small>顯示目標分界，協助掌握切割份量。</small></span><input id="hintsSetting" type="checkbox" role="switch" checked></label>
+    <div class="settings-note"><strong>會計小提醒</strong><p>果肉是資產成本的分配比喻，並非二手市場價格。估計殘值需要保留；切法由資產的使用模式決定，與水果形狀無關。</p></div>
+    <div class="reset-area"><button id="resetProgressBtn" class="reset-button" type="button">重設遊戲進度</button><p>清除解鎖及最高分，重新由熱身開始。</p><div id="resetConfirm" class="reset-confirm hidden"><p>確定清除這部裝置的遊戲進度？</p><div><button id="cancelResetBtn" class="secondary-button" type="button">取消</button><button id="confirmResetBtn" class="danger-button" type="button">確定重設</button></div></div></div>
+  </dialog>
+</body>
+</html>

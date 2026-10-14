@@ -1,0 +1,432 @@
+{
+  "passed": 23,
+  "checks": [
+    "1280 px straight-line: original watermelon bar and residual strip fit the canvas without horizontal page overflow",
+    "1280 px straight-line first-year full bar: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "1280 px straight-line year 1: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "1280 px straight-line year 2: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "1280 px straight-line year 3: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "1280 px straight-line year 4: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "1280 px straight-line: all four $12,000 slices preserve the proportional rectangular strip and cuts inside it cannot remove the residual",
+    "1280 px straight-line completed live fruit: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "1280 px straight-line: result displays a painted, accessible watermelon rind worth $6,000",
+    "1280 px straight-line: the completed table preserves the $6,000 closing value",
+    "Usage-based depreciation still preserves $6,000 and does not label its papaya peel as watermelon",
+    "Five-year reducing balance fully depreciates to $0 and has no retained-peel result",
+    "390 px straight-line: original watermelon bar and residual strip fit the canvas without horizontal page overflow",
+    "390 px straight-line first-year full bar: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "390 px straight-line year 1: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "390 px straight-line year 2: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "390 px straight-line year 3: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "390 px straight-line year 4: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "390 px straight-line: all four $12,000 slices preserve the proportional rectangular strip and cuts inside it cannot remove the residual",
+    "390 px straight-line completed live fruit: live residual remains a filled green rectangle with the original labels and no live rind illustration",
+    "390 px straight-line: result displays a painted, accessible watermelon rind worth $6,000",
+    "390 px straight-line: the completed table preserves the $6,000 closing value",
+    "Original live bars and completion-only rind previews work offline without JavaScript errors or network requests"
+  ],
+  "metrics": [
+    {
+      "label": "1280 px straight-line first-year full bar",
+      "red": 0,
+      "green": 34648,
+      "pixels": 34710,
+      "samples": [
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "1280 px straight-line year 1",
+      "red": 0,
+      "green": 34643,
+      "pixels": 34710,
+      "samples": [
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "1280 px straight-line year 2",
+      "red": 0,
+      "green": 34657,
+      "pixels": 34710,
+      "samples": [
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "1280 px straight-line year 3",
+      "red": 0,
+      "green": 34643,
+      "pixels": 34710,
+      "samples": [
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "1280 px straight-line year 4",
+      "red": 0,
+      "green": 34657,
+      "pixels": 34710,
+      "samples": [
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "1280 px straight-line completed live fruit",
+      "red": 0,
+      "green": 34710,
+      "pixels": 34710,
+      "samples": [
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ],
+        [
+          176,
+          242,
+          169,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "1280 px straight-line",
+      "width": 320,
+      "height": 220,
+      "painted": 12380,
+      "red": 0,
+      "green": 7608
+    },
+    {
+      "label": "390 px straight-line first-year full bar",
+      "red": 0,
+      "green": 7817,
+      "pixels": 7852,
+      "samples": [
+        [
+          107,
+          204,
+          137,
+          255
+        ],
+        [
+          107,
+          204,
+          137,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "390 px straight-line year 1",
+      "red": 0,
+      "green": 7814,
+      "pixels": 7852,
+      "samples": [
+        [
+          106,
+          204,
+          137,
+          255
+        ],
+        [
+          106,
+          204,
+          137,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "390 px straight-line year 2",
+      "red": 0,
+      "green": 7814,
+      "pixels": 7852,
+      "samples": [
+        [
+          91,
+          195,
+          130,
+          255
+        ],
+        [
+          91,
+          195,
+          130,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "390 px straight-line year 3",
+      "red": 0,
+      "green": 7832,
+      "pixels": 7852,
+      "samples": [
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "390 px straight-line year 4",
+      "red": 0,
+      "green": 7826,
+      "pixels": 7852,
+      "samples": [
+        [
+          79,
+          189,
+          124,
+          255
+        ],
+        [
+          79,
+          189,
+          124,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "390 px straight-line completed live fruit",
+      "red": 0,
+      "green": 7852,
+      "pixels": 7852,
+      "samples": [
+        [
+          141,
+          223,
+          152,
+          255
+        ],
+        [
+          141,
+          223,
+          152,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ],
+        [
+          80,
+          189,
+          125,
+          255
+        ]
+      ]
+    },
+    {
+      "label": "390 px straight-line",
+      "width": 320,
+      "height": 220,
+      "painted": 12380,
+      "red": 0,
+      "green": 7608
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}

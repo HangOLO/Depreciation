@@ -1,0 +1,19 @@
+{
+  "passed": 12,
+  "checks": [
+    "Bombs wait until the opening 2.5-second practice period has elapsed",
+    "Free play spawns visible bombs and caps the active bombs at two",
+    "A click on a bomb does not count as a slice or explode it",
+    "Pause freezes bomb positions and the round timer, then resume continues them",
+    "One bomb hit deducts exactly 50 once, creates an explosion, and never creates fruit halves",
+    "A bomb blocks the rest of its stroke, including after the stun expires",
+    "Bomb penalties stop at zero and new pointer gestures are rejected during the stun",
+    "Pause preserves the remaining stun; a new touch stroke scores when it expires",
+    "Bomb hits never end the round early and unlock training only after the complete timer",
+    "Replay clears bombs, hit totals, stun, and score",
+    "All three learning modes remain free of bombs and stun",
+    "Bomb gameplay has no JavaScript errors or external network requests"
+  ],
+  "errors": [],
+  "externalRequests": []
+}

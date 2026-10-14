@@ -1,0 +1,4031 @@
+{
+  "passed": 289,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "1280: four labelled mode cards, with three lessons locked on first visit",
+      "detail": [
+        {
+          "mode": "free",
+          "disabled": false,
+          "name": "自由切水果，開始遊戲"
+        },
+        {
+          "mode": "straight",
+          "disabled": true,
+          "name": "直線法 · 平均切，目前鎖定"
+        },
+        {
+          "mode": "reducing",
+          "disabled": true,
+          "name": "餘額遞減法 · 最後切清，目前鎖定"
+        },
+        {
+          "mode": "usage",
+          "disabled": true,
+          "name": "按使用量法 · 用幾多，切幾多，目前鎖定"
+        }
+      ]
+    },
+    {
+      "name": "1280 fresh menu: no horizontal page overflow",
+      "detail": {
+        "width": 1280,
+        "html": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "name": "1280 fresh menu: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1280 initial menu: hero canvas exists"
+    },
+    {
+      "name": "1280 initial menu: hero rendered at DPR 2",
+      "detail": {
+        "cssWidth": 558,
+        "cssHeight": 220,
+        "width": 1116,
+        "height": 440,
+        "painted": 205702,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "1280 menu after resize: hero canvas exists"
+    },
+    {
+      "name": "1280 menu after resize: hero rendered at DPR 2",
+      "detail": {
+        "cssWidth": 442,
+        "cssHeight": 220,
+        "width": 884,
+        "height": 440,
+        "painted": 205702,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "1280: settings dialog fits the viewport and scrolls when needed",
+      "detail": {
+        "x": 380,
+        "y": 83.375,
+        "right": 900,
+        "bottom": 766.625,
+        "height": 683.25,
+        "scrollHeight": 679,
+        "clientHeight": 679,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "1280 settings: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1280: settings rows have 44 px touch targets",
+      "detail": [
+        {
+          "height": 79,
+          "width": 456
+        },
+        {
+          "height": 79,
+          "width": 456
+        },
+        {
+          "height": 79,
+          "width": 456
+        },
+        {
+          "height": 79,
+          "width": 456
+        }
+      ]
+    },
+    {
+      "name": "1280: settings reset button can be scrolled fully into view",
+      "detail": {
+        "x": 412,
+        "y": 671.625,
+        "width": 72,
+        "height": 44
+      }
+    },
+    {
+      "name": "1280: free play starts from public mode card"
+    },
+    {
+      "name": "1280 free play: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 42,
+        "y": 165.984375,
+        "width": 1196,
+        "height": 626.015625
+      }
+    },
+    {
+      "name": "1280 free play: landscape canvas fits viewport",
+      "detail": {
+        "x": 42,
+        "y": 165.984375,
+        "width": 1196,
+        "height": 626.015625
+      }
+    },
+    {
+      "name": "1280 free play: no horizontal page overflow",
+      "detail": {
+        "width": 1280,
+        "html": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "name": "1280 free play: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1280: pause panel fits visible canvas and viewport",
+      "detail": {
+        "x": 425,
+        "y": 323.8125,
+        "width": 430,
+        "height": 310.34375
+      }
+    },
+    {
+      "name": "1280 pause: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1280: pause resume button works"
+    },
+    {
+      "name": "1280: pause home button returns to menu"
+    },
+    {
+      "name": "1280: unlocked menu exposes all four modes"
+    },
+    {
+      "name": "1280 unlocked menu: no horizontal page overflow",
+      "detail": {
+        "width": 1280,
+        "html": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "name": "1280: reducing balance opens one case fact"
+    },
+    {
+      "name": "1280 case intro: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 42,
+        "y": 80.34375,
+        "width": 1196,
+        "height": 707.65625
+      }
+    },
+    {
+      "name": "1280 case intro: landscape canvas fits viewport",
+      "detail": {
+        "x": 42,
+        "y": 80.34375,
+        "width": 1196,
+        "height": 707.65625
+      }
+    },
+    {
+      "name": "1280 case intro: no horizontal page overflow",
+      "detail": {
+        "width": 1280,
+        "html": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "name": "1280 case intro: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1280 initial case: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 1 / 6",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "公司購入另一部機器",
+            "x": 514,
+            "y": 368.890625,
+            "right": 766,
+            "bottom": 409.484375
+          },
+          {
+            "text": "開始使用",
+            "x": 522.390625,
+            "y": 420.484375,
+            "right": 757.59375,
+            "bottom": 491.28125
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 513.484375,
+            "y": 502.28125,
+            "right": 766.5,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 initial case: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 reducing card 1: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 1 / 6",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "公司購入另一部機器",
+            "x": 514,
+            "y": 368.890625,
+            "right": 766,
+            "bottom": 409.484375
+          },
+          {
+            "text": "開始使用",
+            "x": 522.390625,
+            "y": 420.484375,
+            "right": 757.59375,
+            "bottom": 491.28125
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 513.484375,
+            "y": 502.28125,
+            "right": 766.5,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 reducing card 1: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 reducing card 2: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 2 / 6",
+            "x": 605.265625,
+            "y": 358.375,
+            "right": 674.734375,
+            "bottom": 376.5625
+          },
+          {
+            "text": "資產成本",
+            "x": 584,
+            "y": 387.5625,
+            "right": 696,
+            "bottom": 428.15625
+          },
+          {
+            "text": "$40,000",
+            "x": 529.328125,
+            "y": 439.15625,
+            "right": 750.65625,
+            "bottom": 509.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 reducing card 2: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 reducing card 3: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 3 / 6",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "折舊率",
+            "x": 598,
+            "y": 368.890625,
+            "right": 682,
+            "bottom": 409.484375
+          },
+          {
+            "text": "40%",
+            "x": 578.984375,
+            "y": 420.484375,
+            "right": 701.015625,
+            "bottom": 491.28125
+          },
+          {
+            "text": "一般年度按期初帳面淨值計算。",
+            "x": 521,
+            "y": 502.28125,
+            "right": 759,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 reducing card 3: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 reducing card 4: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 4 / 6",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "估計可使用年期",
+            "x": 542,
+            "y": 368.890625,
+            "right": 738,
+            "bottom": 409.484375
+          },
+          {
+            "text": "5 年",
+            "x": 586.421875,
+            "y": 420.484375,
+            "right": 693.578125,
+            "bottom": 491.28125
+          },
+          {
+            "text": "第 5 年是最後一年。",
+            "x": 562.671875,
+            "y": 502.28125,
+            "right": 717.3125,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 reducing card 4: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 reducing card 5: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 5 / 6",
+            "x": 605.265625,
+            "y": 358.375,
+            "right": 674.734375,
+            "bottom": 376.5625
+          },
+          {
+            "text": "估計殘值",
+            "x": 584,
+            "y": 387.5625,
+            "right": 696,
+            "bottom": 428.15625
+          },
+          {
+            "text": "$0",
+            "x": 605.453125,
+            "y": 439.15625,
+            "right": 674.546875,
+            "bottom": 509.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 reducing card 5: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 reducing card 6: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 6 / 6",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "最後一年",
+            "x": 584,
+            "y": 368.890625,
+            "right": 696,
+            "bottom": 409.484375
+          },
+          {
+            "text": "切清餘額",
+            "x": 522.390625,
+            "y": 420.484375,
+            "right": 757.59375,
+            "bottom": 491.28125
+          },
+          {
+            "text": "本例到期時，全數折舊至殘值。",
+            "x": 521,
+            "y": 502.28125,
+            "right": 759,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 reducing card 6: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280: real card swipes enter minimal five-year lesson"
+    },
+    {
+      "name": "1280 reducing cut: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 42,
+        "y": 138.34375,
+        "width": 1196,
+        "height": 653.65625
+      }
+    },
+    {
+      "name": "1280 reducing cut: landscape canvas fits viewport",
+      "detail": {
+        "x": 42,
+        "y": 138.34375,
+        "width": 1196,
+        "height": 653.65625
+      }
+    },
+    {
+      "name": "1280 reducing cut: no horizontal page overflow",
+      "detail": {
+        "width": 1280,
+        "html": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "name": "1280 reducing cut: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1280: five-year lesson reaches results with zero final book value"
+    },
+    {
+      "name": "1280 results: no horizontal page overflow",
+      "detail": {
+        "width": 1280,
+        "html": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "name": "1280 results: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1280 straight card 1: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 1 / 8",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "公司購入一部機器",
+            "x": 528,
+            "y": 368.890625,
+            "right": 752,
+            "bottom": 409.484375
+          },
+          {
+            "text": "開始使用",
+            "x": 522.390625,
+            "y": 420.484375,
+            "right": 757.59375,
+            "bottom": 491.28125
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 513.484375,
+            "y": 502.28125,
+            "right": 766.5,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 straight card 1: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 straight card 2: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 2 / 8",
+            "x": 605.265625,
+            "y": 358.375,
+            "right": 674.734375,
+            "bottom": 376.5625
+          },
+          {
+            "text": "買價",
+            "x": 612,
+            "y": 387.5625,
+            "right": 668,
+            "bottom": 428.15625
+          },
+          {
+            "text": "$48,000",
+            "x": 529.328125,
+            "y": 439.15625,
+            "right": 750.65625,
+            "bottom": 509.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 straight card 2: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 straight card 3: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 3 / 8",
+            "x": 605.265625,
+            "y": 358.375,
+            "right": 674.734375,
+            "bottom": 376.5625
+          },
+          {
+            "text": "運輸費",
+            "x": 598,
+            "y": 387.5625,
+            "right": 682,
+            "bottom": 428.15625
+          },
+          {
+            "text": "$2,000",
+            "x": 546.609375,
+            "y": 439.15625,
+            "right": 733.390625,
+            "bottom": 509.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 straight card 3: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 straight card 4: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 4 / 8",
+            "x": 605.265625,
+            "y": 358.375,
+            "right": 674.734375,
+            "bottom": 376.5625
+          },
+          {
+            "text": "安裝費",
+            "x": 598,
+            "y": 387.5625,
+            "right": 682,
+            "bottom": 428.15625
+          },
+          {
+            "text": "$4,000",
+            "x": 546.609375,
+            "y": 439.15625,
+            "right": 733.390625,
+            "bottom": 509.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 straight card 4: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 straight card 5: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 5 / 8",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "資產成本",
+            "x": 584,
+            "y": 368.890625,
+            "right": 696,
+            "bottom": 409.484375
+          },
+          {
+            "text": "$54,000",
+            "x": 529.328125,
+            "y": 420.484375,
+            "right": 750.65625,
+            "bottom": 491.28125
+          },
+          {
+            "text": "買價 + 運輸費 + 安裝費",
+            "x": 550.78125,
+            "y": 502.28125,
+            "right": 729.203125,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 straight card 5: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 straight card 6: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 6 / 8",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "估計殘值",
+            "x": 584,
+            "y": 368.890625,
+            "right": 696,
+            "bottom": 409.484375
+          },
+          {
+            "text": "$6,000",
+            "x": 546.609375,
+            "y": 420.484375,
+            "right": 733.390625,
+            "bottom": 491.28125
+          },
+          {
+            "text": "使用年期完結時，估計保留的價值。",
+            "x": 504,
+            "y": 502.28125,
+            "right": 776,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 straight card 6: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 straight card 7: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 7 / 8",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "估計可使用年期",
+            "x": 542,
+            "y": 368.890625,
+            "right": 738,
+            "bottom": 409.484375
+          },
+          {
+            "text": "4 年",
+            "x": 586.421875,
+            "y": 420.484375,
+            "right": 693.578125,
+            "bottom": 491.28125
+          },
+          {
+            "text": "用直線法平均分配。",
+            "x": 563.5,
+            "y": 502.28125,
+            "right": 716.5,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 straight card 7: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 straight card 8: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 8 / 8",
+            "x": 605.265625,
+            "y": 358.375,
+            "right": 674.734375,
+            "bottom": 376.5625
+          },
+          {
+            "text": "年結日",
+            "x": 598,
+            "y": 387.5625,
+            "right": 682,
+            "bottom": 428.15625
+          },
+          {
+            "text": "12 月 31 日",
+            "x": 491.40625,
+            "y": 439.15625,
+            "right": 788.578125,
+            "bottom": 509.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 straight card 8: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280: straight mode routing and first slice preserved"
+    },
+    {
+      "name": "1280 usage card 1: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 1 / 5",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "水果加工廠購入機器",
+            "x": 514,
+            "y": 368.890625,
+            "right": 766,
+            "bottom": 409.484375
+          },
+          {
+            "text": "準備開工",
+            "x": 522.390625,
+            "y": 420.484375,
+            "right": 757.59375,
+            "bottom": 491.28125
+          },
+          {
+            "text": "按機器的實際使用量分配成本。",
+            "x": 521,
+            "y": 502.28125,
+            "right": 759,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 usage card 1: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 usage card 2: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 2 / 5",
+            "x": 605.265625,
+            "y": 358.375,
+            "right": 674.734375,
+            "bottom": 376.5625
+          },
+          {
+            "text": "機器成本",
+            "x": 584,
+            "y": 387.5625,
+            "right": 696,
+            "bottom": 428.15625
+          },
+          {
+            "text": "$54,000",
+            "x": 529.328125,
+            "y": 439.15625,
+            "right": 750.65625,
+            "bottom": 509.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 usage card 2: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 usage card 3: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 3 / 5",
+            "x": 605.265625,
+            "y": 358.375,
+            "right": 674.734375,
+            "bottom": 376.5625
+          },
+          {
+            "text": "估計殘值",
+            "x": 584,
+            "y": 387.5625,
+            "right": 696,
+            "bottom": 428.15625
+          },
+          {
+            "text": "$6,000",
+            "x": 546.609375,
+            "y": 439.15625,
+            "right": 733.390625,
+            "bottom": 509.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 usage card 3: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 usage card 4: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 4 / 5",
+            "x": 605.265625,
+            "y": 358.375,
+            "right": 674.734375,
+            "bottom": 376.5625
+          },
+          {
+            "text": "估計總使用量",
+            "x": 556,
+            "y": 387.5625,
+            "right": 724,
+            "bottom": 428.15625
+          },
+          {
+            "text": "12,000 次",
+            "x": 510.3125,
+            "y": 439.15625,
+            "right": 769.6875,
+            "bottom": 509.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 usage card 4: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280 usage card 5: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 330,
+        "y": 269.171875,
+        "right": 950,
+        "bottom": 599.171875,
+        "canvas": {
+          "x": 42,
+          "y": 80.34375,
+          "right": 1238,
+          "bottom": 788
+        },
+        "children": [
+          {
+            "text": "情境 5 / 5",
+            "x": 605.265625,
+            "y": 339.703125,
+            "right": 674.734375,
+            "bottom": 357.890625
+          },
+          {
+            "text": "生產訂單",
+            "x": 584,
+            "y": 368.890625,
+            "right": 696,
+            "bottom": 409.484375
+          },
+          {
+            "text": "按用量切",
+            "x": 522.390625,
+            "y": 420.484375,
+            "right": 757.59375,
+            "bottom": 491.28125
+          },
+          {
+            "text": "每年會收到一張訂單。",
+            "x": 555,
+            "y": 502.28125,
+            "right": 725,
+            "bottom": 528.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1280 usage card 5: no side panel or duplicate case background"
+    },
+    {
+      "name": "1280: usage mode routing and first slice preserved"
+    },
+    {
+      "name": "1024: four labelled mode cards, with three lessons locked on first visit",
+      "detail": [
+        {
+          "mode": "free",
+          "disabled": false,
+          "name": "自由切水果，開始遊戲"
+        },
+        {
+          "mode": "straight",
+          "disabled": true,
+          "name": "直線法 · 平均切，目前鎖定"
+        },
+        {
+          "mode": "reducing",
+          "disabled": true,
+          "name": "餘額遞減法 · 最後切清，目前鎖定"
+        },
+        {
+          "mode": "usage",
+          "disabled": true,
+          "name": "按使用量法 · 用幾多，切幾多，目前鎖定"
+        }
+      ]
+    },
+    {
+      "name": "1024 fresh menu: no horizontal page overflow",
+      "detail": {
+        "width": 1024,
+        "html": 1024,
+        "body": 1024
+      }
+    },
+    {
+      "name": "1024 fresh menu: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1024 initial menu: hero canvas exists"
+    },
+    {
+      "name": "1024 initial menu: hero rendered at DPR 2",
+      "detail": {
+        "cssWidth": 442,
+        "cssHeight": 220,
+        "width": 884,
+        "height": 440,
+        "painted": 205702,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "1024 menu after resize: hero canvas exists"
+    },
+    {
+      "name": "1024 menu after resize: hero rendered at DPR 2",
+      "detail": {
+        "cssWidth": 432,
+        "cssHeight": 220,
+        "width": 864,
+        "height": 440,
+        "painted": 205702,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "1024: settings dialog fits the viewport and scrolls when needed",
+      "detail": {
+        "x": 252,
+        "y": 42.375,
+        "right": 772,
+        "bottom": 725.625,
+        "height": 683.25,
+        "scrollHeight": 679,
+        "clientHeight": 679,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "1024 settings: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1024: settings rows have 44 px touch targets",
+      "detail": [
+        {
+          "height": 79,
+          "width": 456
+        },
+        {
+          "height": 79,
+          "width": 456
+        },
+        {
+          "height": 79,
+          "width": 456
+        },
+        {
+          "height": 79,
+          "width": 456
+        }
+      ]
+    },
+    {
+      "name": "1024: settings reset button can be scrolled fully into view",
+      "detail": {
+        "x": 284,
+        "y": 630.625,
+        "width": 72,
+        "height": 44
+      }
+    },
+    {
+      "name": "1024: free play starts from public mode card"
+    },
+    {
+      "name": "1024 free play: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 30,
+        "y": 165.984375,
+        "width": 964,
+        "height": 544.015625
+      }
+    },
+    {
+      "name": "1024 free play: landscape canvas fits viewport",
+      "detail": {
+        "x": 30,
+        "y": 165.984375,
+        "width": 964,
+        "height": 544.015625
+      }
+    },
+    {
+      "name": "1024 free play: no horizontal page overflow",
+      "detail": {
+        "width": 1024,
+        "html": 1024,
+        "body": 1024
+      }
+    },
+    {
+      "name": "1024 free play: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1024: pause panel fits visible canvas and viewport",
+      "detail": {
+        "x": 297,
+        "y": 282.8125,
+        "width": 430,
+        "height": 310.34375
+      }
+    },
+    {
+      "name": "1024 pause: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1024: pause resume button works"
+    },
+    {
+      "name": "1024: pause home button returns to menu"
+    },
+    {
+      "name": "1024: unlocked menu exposes all four modes"
+    },
+    {
+      "name": "1024 unlocked menu: no horizontal page overflow",
+      "detail": {
+        "width": 1024,
+        "html": 1024,
+        "body": 1024
+      }
+    },
+    {
+      "name": "1024: reducing balance opens one case fact"
+    },
+    {
+      "name": "1024 case intro: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 30,
+        "y": 80.34375,
+        "width": 964,
+        "height": 625.65625
+      }
+    },
+    {
+      "name": "1024 case intro: landscape canvas fits viewport",
+      "detail": {
+        "x": 30,
+        "y": 80.34375,
+        "width": 964,
+        "height": 625.65625
+      }
+    },
+    {
+      "name": "1024 case intro: no horizontal page overflow",
+      "detail": {
+        "width": 1024,
+        "html": 1024,
+        "body": 1024
+      }
+    },
+    {
+      "name": "1024 case intro: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1024 initial case: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 202,
+        "y": 228.171875,
+        "right": 822,
+        "bottom": 558.171875,
+        "canvas": {
+          "x": 30,
+          "y": 80.34375,
+          "right": 994,
+          "bottom": 706
+        },
+        "children": [
+          {
+            "text": "情境 1 / 6",
+            "x": 477.265625,
+            "y": 298.703125,
+            "right": 546.734375,
+            "bottom": 316.890625
+          },
+          {
+            "text": "公司購入另一部機器",
+            "x": 386,
+            "y": 327.890625,
+            "right": 638,
+            "bottom": 368.484375
+          },
+          {
+            "text": "開始使用",
+            "x": 394.390625,
+            "y": 379.484375,
+            "right": 629.59375,
+            "bottom": 450.28125
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 385.484375,
+            "y": 461.28125,
+            "right": 638.5,
+            "bottom": 487.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1024 initial case: no side panel or duplicate case background"
+    },
+    {
+      "name": "1024 reducing card 1: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 202,
+        "y": 228.171875,
+        "right": 822,
+        "bottom": 558.171875,
+        "canvas": {
+          "x": 30,
+          "y": 80.34375,
+          "right": 994,
+          "bottom": 706
+        },
+        "children": [
+          {
+            "text": "情境 1 / 6",
+            "x": 477.265625,
+            "y": 298.703125,
+            "right": 546.734375,
+            "bottom": 316.890625
+          },
+          {
+            "text": "公司購入另一部機器",
+            "x": 386,
+            "y": 327.890625,
+            "right": 638,
+            "bottom": 368.484375
+          },
+          {
+            "text": "開始使用",
+            "x": 394.390625,
+            "y": 379.484375,
+            "right": 629.59375,
+            "bottom": 450.28125
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 385.484375,
+            "y": 461.28125,
+            "right": 638.5,
+            "bottom": 487.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1024 reducing card 1: no side panel or duplicate case background"
+    },
+    {
+      "name": "1024 reducing card 2: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 202,
+        "y": 228.171875,
+        "right": 822,
+        "bottom": 558.171875,
+        "canvas": {
+          "x": 30,
+          "y": 80.34375,
+          "right": 994,
+          "bottom": 706
+        },
+        "children": [
+          {
+            "text": "情境 2 / 6",
+            "x": 477.265625,
+            "y": 317.375,
+            "right": 546.734375,
+            "bottom": 335.5625
+          },
+          {
+            "text": "資產成本",
+            "x": 456,
+            "y": 346.5625,
+            "right": 568,
+            "bottom": 387.15625
+          },
+          {
+            "text": "$40,000",
+            "x": 401.328125,
+            "y": 398.15625,
+            "right": 622.65625,
+            "bottom": 468.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1024 reducing card 2: no side panel or duplicate case background"
+    },
+    {
+      "name": "1024 reducing card 3: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 202,
+        "y": 228.171875,
+        "right": 822,
+        "bottom": 558.171875,
+        "canvas": {
+          "x": 30,
+          "y": 80.34375,
+          "right": 994,
+          "bottom": 706
+        },
+        "children": [
+          {
+            "text": "情境 3 / 6",
+            "x": 477.265625,
+            "y": 298.703125,
+            "right": 546.734375,
+            "bottom": 316.890625
+          },
+          {
+            "text": "折舊率",
+            "x": 470,
+            "y": 327.890625,
+            "right": 554,
+            "bottom": 368.484375
+          },
+          {
+            "text": "40%",
+            "x": 450.984375,
+            "y": 379.484375,
+            "right": 573.015625,
+            "bottom": 450.28125
+          },
+          {
+            "text": "一般年度按期初帳面淨值計算。",
+            "x": 393,
+            "y": 461.28125,
+            "right": 631,
+            "bottom": 487.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1024 reducing card 3: no side panel or duplicate case background"
+    },
+    {
+      "name": "1024 reducing card 4: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 202,
+        "y": 228.171875,
+        "right": 822,
+        "bottom": 558.171875,
+        "canvas": {
+          "x": 30,
+          "y": 80.34375,
+          "right": 994,
+          "bottom": 706
+        },
+        "children": [
+          {
+            "text": "情境 4 / 6",
+            "x": 477.265625,
+            "y": 298.703125,
+            "right": 546.734375,
+            "bottom": 316.890625
+          },
+          {
+            "text": "估計可使用年期",
+            "x": 414,
+            "y": 327.890625,
+            "right": 610,
+            "bottom": 368.484375
+          },
+          {
+            "text": "5 年",
+            "x": 458.421875,
+            "y": 379.484375,
+            "right": 565.578125,
+            "bottom": 450.28125
+          },
+          {
+            "text": "第 5 年是最後一年。",
+            "x": 434.671875,
+            "y": 461.28125,
+            "right": 589.3125,
+            "bottom": 487.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1024 reducing card 4: no side panel or duplicate case background"
+    },
+    {
+      "name": "1024 reducing card 5: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 202,
+        "y": 228.171875,
+        "right": 822,
+        "bottom": 558.171875,
+        "canvas": {
+          "x": 30,
+          "y": 80.34375,
+          "right": 994,
+          "bottom": 706
+        },
+        "children": [
+          {
+            "text": "情境 5 / 6",
+            "x": 477.265625,
+            "y": 317.375,
+            "right": 546.734375,
+            "bottom": 335.5625
+          },
+          {
+            "text": "估計殘值",
+            "x": 456,
+            "y": 346.5625,
+            "right": 568,
+            "bottom": 387.15625
+          },
+          {
+            "text": "$0",
+            "x": 477.453125,
+            "y": 398.15625,
+            "right": 546.546875,
+            "bottom": 468.953125
+          }
+        ]
+      }
+    },
+    {
+      "name": "1024 reducing card 5: no side panel or duplicate case background"
+    },
+    {
+      "name": "1024 reducing card 6: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 202,
+        "y": 228.171875,
+        "right": 822,
+        "bottom": 558.171875,
+        "canvas": {
+          "x": 30,
+          "y": 80.34375,
+          "right": 994,
+          "bottom": 706
+        },
+        "children": [
+          {
+            "text": "情境 6 / 6",
+            "x": 477.265625,
+            "y": 298.703125,
+            "right": 546.734375,
+            "bottom": 316.890625
+          },
+          {
+            "text": "最後一年",
+            "x": 456,
+            "y": 327.890625,
+            "right": 568,
+            "bottom": 368.484375
+          },
+          {
+            "text": "切清餘額",
+            "x": 394.390625,
+            "y": 379.484375,
+            "right": 629.59375,
+            "bottom": 450.28125
+          },
+          {
+            "text": "本例到期時，全數折舊至殘值。",
+            "x": 393,
+            "y": 461.28125,
+            "right": 631,
+            "bottom": 487.625
+          }
+        ]
+      }
+    },
+    {
+      "name": "1024 reducing card 6: no side panel or duplicate case background"
+    },
+    {
+      "name": "1024: real card swipes enter minimal five-year lesson"
+    },
+    {
+      "name": "1024 reducing cut: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 30,
+        "y": 138.34375,
+        "width": 964,
+        "height": 571.65625
+      }
+    },
+    {
+      "name": "1024 reducing cut: landscape canvas fits viewport",
+      "detail": {
+        "x": 30,
+        "y": 138.34375,
+        "width": 964,
+        "height": 571.65625
+      }
+    },
+    {
+      "name": "1024 reducing cut: no horizontal page overflow",
+      "detail": {
+        "width": 1024,
+        "html": 1024,
+        "body": 1024
+      }
+    },
+    {
+      "name": "1024 reducing cut: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "1024: five-year lesson reaches results with zero final book value"
+    },
+    {
+      "name": "1024 results: no horizontal page overflow",
+      "detail": {
+        "width": 1024,
+        "html": 1024,
+        "body": 1024
+      }
+    },
+    {
+      "name": "1024 results: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "844: four labelled mode cards, with three lessons locked on first visit",
+      "detail": [
+        {
+          "mode": "free",
+          "disabled": false,
+          "name": "自由切水果，開始遊戲"
+        },
+        {
+          "mode": "straight",
+          "disabled": true,
+          "name": "直線法 · 平均切，目前鎖定"
+        },
+        {
+          "mode": "reducing",
+          "disabled": true,
+          "name": "餘額遞減法 · 最後切清，目前鎖定"
+        },
+        {
+          "mode": "usage",
+          "disabled": true,
+          "name": "按使用量法 · 用幾多，切幾多，目前鎖定"
+        }
+      ]
+    },
+    {
+      "name": "844 fresh menu: no horizontal page overflow",
+      "detail": {
+        "width": 844,
+        "html": 844,
+        "body": 844
+      }
+    },
+    {
+      "name": "844 fresh menu: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "844 initial menu: hero canvas exists"
+    },
+    {
+      "name": "844 initial menu: hero rendered at DPR 2",
+      "detail": {
+        "cssWidth": 369,
+        "cssHeight": 260,
+        "width": 738,
+        "height": 520,
+        "painted": 256101,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "844 menu after resize: hero canvas exists"
+    },
+    {
+      "name": "844 menu after resize: hero rendered at DPR 2",
+      "detail": {
+        "cssWidth": 359,
+        "cssHeight": 260,
+        "width": 718,
+        "height": 520,
+        "painted": 242956,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "844: settings dialog fits the viewport and scrolls when needed",
+      "detail": {
+        "x": 162,
+        "y": 20,
+        "right": 682,
+        "bottom": 370,
+        "height": 350,
+        "scrollHeight": 679,
+        "clientHeight": 346,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "844 settings: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "844: settings rows have 44 px touch targets",
+      "detail": [
+        {
+          "height": 79,
+          "width": 456
+        },
+        {
+          "height": 79,
+          "width": 456
+        },
+        {
+          "height": 79,
+          "width": 456
+        },
+        {
+          "height": 79,
+          "width": 456
+        }
+      ]
+    },
+    {
+      "name": "844: settings reset button can be scrolled fully into view",
+      "detail": {
+        "x": 194,
+        "y": 275.25,
+        "width": 72,
+        "height": 44
+      }
+    },
+    {
+      "name": "844: free play starts from public mode card"
+    },
+    {
+      "name": "844 free play: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 18,
+        "y": 105.4375,
+        "width": 808,
+        "height": 243.5625
+      }
+    },
+    {
+      "name": "844 free play: landscape canvas fits viewport",
+      "detail": {
+        "x": 18,
+        "y": 105.4375,
+        "width": 808,
+        "height": 243.5625
+      }
+    },
+    {
+      "name": "844 free play: no horizontal page overflow",
+      "detail": {
+        "width": 844,
+        "html": 844,
+        "body": 844
+      }
+    },
+    {
+      "name": "844 free play: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "844: pause panel fits visible canvas and viewport",
+      "detail": {
+        "x": 212,
+        "y": 107.53125,
+        "width": 420,
+        "height": 239.390625
+      }
+    },
+    {
+      "name": "844 pause: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "844: pause resume button works"
+    },
+    {
+      "name": "844: pause home button returns to menu"
+    },
+    {
+      "name": "844: unlocked menu exposes all four modes"
+    },
+    {
+      "name": "844 unlocked menu: no horizontal page overflow",
+      "detail": {
+        "width": 844,
+        "html": 844,
+        "body": 844
+      }
+    },
+    {
+      "name": "844: reducing balance opens one case fact"
+    },
+    {
+      "name": "844 case intro: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 18,
+        "y": 62,
+        "width": 808,
+        "height": 285
+      }
+    },
+    {
+      "name": "844 case intro: landscape canvas fits viewport",
+      "detail": {
+        "x": 18,
+        "y": 62,
+        "width": 808,
+        "height": 285
+      }
+    },
+    {
+      "name": "844 case intro: no horizontal page overflow",
+      "detail": {
+        "width": 844,
+        "html": 844,
+        "body": 844
+      }
+    },
+    {
+      "name": "844 case intro: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "844 initial case: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 1 / 6",
+            "x": 387.265625,
+            "y": 110.046875,
+            "right": 456.734375,
+            "bottom": 128.234375
+          },
+          {
+            "text": "公司購入另一部機器",
+            "x": 296,
+            "y": 139.234375,
+            "right": 548,
+            "bottom": 179.828125
+          },
+          {
+            "text": "開始使用",
+            "x": 304.390625,
+            "y": 190.828125,
+            "right": 539.59375,
+            "bottom": 261.625
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 295.484375,
+            "y": 272.625,
+            "right": 548.5,
+            "bottom": 298.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 initial case: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 reducing card 1: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 1 / 6",
+            "x": 387.265625,
+            "y": 110.046875,
+            "right": 456.734375,
+            "bottom": 128.234375
+          },
+          {
+            "text": "公司購入另一部機器",
+            "x": 296,
+            "y": 139.234375,
+            "right": 548,
+            "bottom": 179.828125
+          },
+          {
+            "text": "開始使用",
+            "x": 304.390625,
+            "y": 190.828125,
+            "right": 539.59375,
+            "bottom": 261.625
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 295.484375,
+            "y": 272.625,
+            "right": 548.5,
+            "bottom": 298.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 reducing card 1: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 reducing card 2: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 2 / 6",
+            "x": 387.265625,
+            "y": 128.703125,
+            "right": 456.734375,
+            "bottom": 146.890625
+          },
+          {
+            "text": "資產成本",
+            "x": 366,
+            "y": 157.890625,
+            "right": 478,
+            "bottom": 198.484375
+          },
+          {
+            "text": "$40,000",
+            "x": 311.328125,
+            "y": 209.484375,
+            "right": 532.65625,
+            "bottom": 280.28125
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 reducing card 2: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 reducing card 3: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 3 / 6",
+            "x": 387.265625,
+            "y": 110.046875,
+            "right": 456.734375,
+            "bottom": 128.234375
+          },
+          {
+            "text": "折舊率",
+            "x": 380,
+            "y": 139.234375,
+            "right": 464,
+            "bottom": 179.828125
+          },
+          {
+            "text": "40%",
+            "x": 360.984375,
+            "y": 190.828125,
+            "right": 483.015625,
+            "bottom": 261.625
+          },
+          {
+            "text": "一般年度按期初帳面淨值計算。",
+            "x": 303,
+            "y": 272.625,
+            "right": 541,
+            "bottom": 298.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 reducing card 3: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 reducing card 4: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 4 / 6",
+            "x": 387.265625,
+            "y": 110.046875,
+            "right": 456.734375,
+            "bottom": 128.234375
+          },
+          {
+            "text": "估計可使用年期",
+            "x": 324,
+            "y": 139.234375,
+            "right": 520,
+            "bottom": 179.828125
+          },
+          {
+            "text": "5 年",
+            "x": 368.421875,
+            "y": 190.828125,
+            "right": 475.578125,
+            "bottom": 261.625
+          },
+          {
+            "text": "第 5 年是最後一年。",
+            "x": 344.671875,
+            "y": 272.625,
+            "right": 499.3125,
+            "bottom": 298.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 reducing card 4: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 reducing card 5: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 5 / 6",
+            "x": 387.265625,
+            "y": 128.703125,
+            "right": 456.734375,
+            "bottom": 146.890625
+          },
+          {
+            "text": "估計殘值",
+            "x": 366,
+            "y": 157.890625,
+            "right": 478,
+            "bottom": 198.484375
+          },
+          {
+            "text": "$0",
+            "x": 387.453125,
+            "y": 209.484375,
+            "right": 456.546875,
+            "bottom": 280.28125
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 reducing card 5: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 reducing card 6: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 6 / 6",
+            "x": 387.265625,
+            "y": 110.046875,
+            "right": 456.734375,
+            "bottom": 128.234375
+          },
+          {
+            "text": "最後一年",
+            "x": 366,
+            "y": 139.234375,
+            "right": 478,
+            "bottom": 179.828125
+          },
+          {
+            "text": "切清餘額",
+            "x": 304.390625,
+            "y": 190.828125,
+            "right": 539.59375,
+            "bottom": 261.625
+          },
+          {
+            "text": "本例到期時，全數折舊至殘值。",
+            "x": 303,
+            "y": 272.625,
+            "right": 541,
+            "bottom": 298.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 reducing card 6: no side panel or duplicate case background"
+    },
+    {
+      "name": "844: real card swipes enter minimal five-year lesson"
+    },
+    {
+      "name": "844 reducing cut: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 18,
+        "y": 105.4375,
+        "width": 808,
+        "height": 243.5625
+      }
+    },
+    {
+      "name": "844 reducing cut: landscape canvas fits viewport",
+      "detail": {
+        "x": 18,
+        "y": 105.4375,
+        "width": 808,
+        "height": 243.5625
+      }
+    },
+    {
+      "name": "844 reducing cut: no horizontal page overflow",
+      "detail": {
+        "width": 844,
+        "html": 844,
+        "body": 844
+      }
+    },
+    {
+      "name": "844 reducing cut: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "844: five-year lesson reaches results with zero final book value"
+    },
+    {
+      "name": "844 results: no horizontal page overflow",
+      "detail": {
+        "width": 844,
+        "html": 844,
+        "body": 844
+      }
+    },
+    {
+      "name": "844 results: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "390: four labelled mode cards, with three lessons locked on first visit",
+      "detail": [
+        {
+          "mode": "free",
+          "disabled": false,
+          "name": "自由切水果，開始遊戲"
+        },
+        {
+          "mode": "straight",
+          "disabled": true,
+          "name": "直線法 · 平均切，目前鎖定"
+        },
+        {
+          "mode": "reducing",
+          "disabled": true,
+          "name": "餘額遞減法 · 最後切清，目前鎖定"
+        },
+        {
+          "mode": "usage",
+          "disabled": true,
+          "name": "按使用量法 · 用幾多，切幾多，目前鎖定"
+        }
+      ]
+    },
+    {
+      "name": "390 fresh menu: no horizontal page overflow",
+      "detail": {
+        "width": 390,
+        "html": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "390 fresh menu: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "390 initial menu: hero canvas exists"
+    },
+    {
+      "name": "390 initial menu: hero rendered at DPR 2",
+      "detail": {
+        "cssWidth": 111.296875,
+        "cssHeight": 180,
+        "width": 223,
+        "height": 360,
+        "painted": 25733,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "390 menu after resize: hero canvas exists"
+    },
+    {
+      "name": "390 menu after resize: hero rendered at DPR 2",
+      "detail": {
+        "cssWidth": 121.796875,
+        "cssHeight": 180,
+        "width": 244,
+        "height": 360,
+        "painted": 30315,
+        "dpr": 2
+      }
+    },
+    {
+      "name": "390: settings dialog fits the viewport and scrolls when needed",
+      "detail": {
+        "x": 19,
+        "y": 96.25,
+        "right": 371,
+        "bottom": 747.75,
+        "height": 651.5,
+        "scrollHeight": 648,
+        "clientHeight": 648,
+        "overflow": "auto"
+      }
+    },
+    {
+      "name": "390 settings: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "390: settings rows have 44 px touch targets",
+      "detail": [
+        {
+          "height": 75,
+          "width": 308
+        },
+        {
+          "height": 75,
+          "width": 308
+        },
+        {
+          "height": 75,
+          "width": 308
+        },
+        {
+          "height": 75,
+          "width": 308
+        }
+      ]
+    },
+    {
+      "name": "390: settings reset button can be scrolled fully into view",
+      "detail": {
+        "x": 41,
+        "y": 656.75,
+        "width": 72,
+        "height": 44
+      }
+    },
+    {
+      "name": "390: free play starts from public mode card"
+    },
+    {
+      "name": "390 free play: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 18,
+        "y": 146.390625,
+        "width": 354,
+        "height": 430
+      }
+    },
+    {
+      "name": "390 free play: no horizontal page overflow",
+      "detail": {
+        "width": 390,
+        "html": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "390 free play: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "390: pause panel fits visible canvas and viewport",
+      "detail": {
+        "x": 34,
+        "y": 218.34375,
+        "width": 322,
+        "height": 286.09375
+      }
+    },
+    {
+      "name": "390 pause: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "390: pause resume button works"
+    },
+    {
+      "name": "390: pause home button returns to menu"
+    },
+    {
+      "name": "390: unlocked menu exposes all four modes"
+    },
+    {
+      "name": "390 unlocked menu: no horizontal page overflow",
+      "detail": {
+        "width": 390,
+        "html": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "390: reducing balance opens one case fact"
+    },
+    {
+      "name": "390 case intro: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 18,
+        "y": 74,
+        "width": 354,
+        "height": 430
+      }
+    },
+    {
+      "name": "390 case intro: no horizontal page overflow",
+      "detail": {
+        "width": 390,
+        "html": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "390 case intro: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "390 initial case: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 1 / 6",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "公司購入另一部機器",
+            "x": 113.984375,
+            "y": 247.234375,
+            "right": 275.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "開始使用",
+            "x": 125.46875,
+            "y": 284.328125,
+            "right": 264.515625,
+            "bottom": 326.171875
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 105.6875,
+            "y": 337.171875,
+            "right": 284.28125,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 initial case: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 reducing card 1: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 1 / 6",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "公司購入另一部機器",
+            "x": 113.984375,
+            "y": 247.234375,
+            "right": 275.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "開始使用",
+            "x": 125.46875,
+            "y": 284.328125,
+            "right": 264.515625,
+            "bottom": 326.171875
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 105.6875,
+            "y": 337.171875,
+            "right": 284.28125,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 reducing card 1: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 reducing card 2: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 2 / 6",
+            "x": 168.265625,
+            "y": 237.03125,
+            "right": 221.703125,
+            "bottom": 251.03125
+          },
+          {
+            "text": "資產成本",
+            "x": 158.984375,
+            "y": 262.03125,
+            "right": 230.984375,
+            "bottom": 288.125
+          },
+          {
+            "text": "$40,000",
+            "x": 129.5625,
+            "y": 299.125,
+            "right": 260.40625,
+            "bottom": 340.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 reducing card 2: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 reducing card 3: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 3 / 6",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "折舊率",
+            "x": 167.984375,
+            "y": 247.234375,
+            "right": 221.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "40%",
+            "x": 158.921875,
+            "y": 284.328125,
+            "right": 231.0625,
+            "bottom": 326.171875
+          },
+          {
+            "text": "一般年度按期初帳面淨值計算。",
+            "x": 110.984375,
+            "y": 337.171875,
+            "right": 278.984375,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 reducing card 3: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 reducing card 4: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 4 / 6",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "估計可使用年期",
+            "x": 131.984375,
+            "y": 247.234375,
+            "right": 257.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "5 年",
+            "x": 163.3125,
+            "y": 284.328125,
+            "right": 226.65625,
+            "bottom": 326.171875
+          },
+          {
+            "text": "第 5 年是最後一年。",
+            "x": 140.40625,
+            "y": 337.171875,
+            "right": 249.5625,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 reducing card 4: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 reducing card 5: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 5 / 6",
+            "x": 168.265625,
+            "y": 237.03125,
+            "right": 221.703125,
+            "bottom": 251.03125
+          },
+          {
+            "text": "估計殘值",
+            "x": 158.984375,
+            "y": 262.03125,
+            "right": 230.984375,
+            "bottom": 288.125
+          },
+          {
+            "text": "$0",
+            "x": 174.5625,
+            "y": 299.125,
+            "right": 215.40625,
+            "bottom": 340.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 reducing card 5: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 reducing card 6: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 6 / 6",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "最後一年",
+            "x": 158.984375,
+            "y": 247.234375,
+            "right": 230.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "切清餘額",
+            "x": 125.46875,
+            "y": 284.328125,
+            "right": 264.515625,
+            "bottom": 326.171875
+          },
+          {
+            "text": "本例到期時，全數折舊至殘值。",
+            "x": 110.984375,
+            "y": 337.171875,
+            "right": 278.984375,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 reducing card 6: no side panel or duplicate case background"
+    },
+    {
+      "name": "390: real card swipes enter minimal five-year lesson"
+    },
+    {
+      "name": "390 reducing cut: cutting canvas is at least 220 px tall",
+      "detail": {
+        "x": 18,
+        "y": 128,
+        "width": 354,
+        "height": 430
+      }
+    },
+    {
+      "name": "390 reducing cut: no horizontal page overflow",
+      "detail": {
+        "width": 390,
+        "html": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "390 reducing cut: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "390: five-year lesson reaches results with zero final book value"
+    },
+    {
+      "name": "390 results: no horizontal page overflow",
+      "detail": {
+        "width": 390,
+        "html": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "390 results: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "390 straight card 1: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 1 / 8",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "公司購入一部機器",
+            "x": 122.984375,
+            "y": 247.234375,
+            "right": 266.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "開始使用",
+            "x": 125.46875,
+            "y": 284.328125,
+            "right": 264.515625,
+            "bottom": 326.171875
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 105.6875,
+            "y": 337.171875,
+            "right": 284.28125,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 straight card 1: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 straight card 2: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 2 / 8",
+            "x": 168.265625,
+            "y": 237.03125,
+            "right": 221.703125,
+            "bottom": 251.03125
+          },
+          {
+            "text": "買價",
+            "x": 176.984375,
+            "y": 262.03125,
+            "right": 212.984375,
+            "bottom": 288.125
+          },
+          {
+            "text": "$48,000",
+            "x": 129.5625,
+            "y": 299.125,
+            "right": 260.40625,
+            "bottom": 340.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 straight card 2: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 straight card 3: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 3 / 8",
+            "x": 168.265625,
+            "y": 237.03125,
+            "right": 221.703125,
+            "bottom": 251.03125
+          },
+          {
+            "text": "運輸費",
+            "x": 167.984375,
+            "y": 262.03125,
+            "right": 221.984375,
+            "bottom": 288.125
+          },
+          {
+            "text": "$2,000",
+            "x": 139.78125,
+            "y": 299.125,
+            "right": 250.203125,
+            "bottom": 340.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 straight card 3: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 straight card 4: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 4 / 8",
+            "x": 168.265625,
+            "y": 237.03125,
+            "right": 221.703125,
+            "bottom": 251.03125
+          },
+          {
+            "text": "安裝費",
+            "x": 167.984375,
+            "y": 262.03125,
+            "right": 221.984375,
+            "bottom": 288.125
+          },
+          {
+            "text": "$4,000",
+            "x": 139.78125,
+            "y": 299.125,
+            "right": 250.203125,
+            "bottom": 340.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 straight card 4: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 straight card 5: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 5 / 8",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "資產成本",
+            "x": 158.984375,
+            "y": 247.234375,
+            "right": 230.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "$54,000",
+            "x": 129.5625,
+            "y": 284.328125,
+            "right": 260.40625,
+            "bottom": 326.171875
+          },
+          {
+            "text": "買價 + 運輸費 + 安裝費",
+            "x": 132.015625,
+            "y": 337.171875,
+            "right": 257.96875,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 straight card 5: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 straight card 6: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 6 / 8",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "估計殘值",
+            "x": 158.984375,
+            "y": 247.234375,
+            "right": 230.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "$6,000",
+            "x": 139.78125,
+            "y": 284.328125,
+            "right": 250.203125,
+            "bottom": 326.171875
+          },
+          {
+            "text": "使用年期完結時，估計保留的價值。",
+            "x": 98.984375,
+            "y": 337.171875,
+            "right": 290.984375,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 straight card 6: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 straight card 7: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 7 / 8",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "估計可使用年期",
+            "x": 131.984375,
+            "y": 247.234375,
+            "right": 257.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "4 年",
+            "x": 163.3125,
+            "y": 284.328125,
+            "right": 226.65625,
+            "bottom": 326.171875
+          },
+          {
+            "text": "用直線法平均分配。",
+            "x": 140.984375,
+            "y": 337.171875,
+            "right": 248.984375,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 straight card 7: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 straight card 8: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 8 / 8",
+            "x": 168.265625,
+            "y": 237.03125,
+            "right": 221.703125,
+            "bottom": 251.03125
+          },
+          {
+            "text": "年結日",
+            "x": 167.984375,
+            "y": 262.03125,
+            "right": 221.984375,
+            "bottom": 288.125
+          },
+          {
+            "text": "12 月 31 日",
+            "x": 107.140625,
+            "y": 299.125,
+            "right": 282.828125,
+            "bottom": 340.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 straight card 8: no side panel or duplicate case background"
+    },
+    {
+      "name": "390: straight mode routing and first slice preserved"
+    },
+    {
+      "name": "390 usage card 1: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 1 / 5",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "水果加工廠購入機器",
+            "x": 113.984375,
+            "y": 247.234375,
+            "right": 275.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "準備開工",
+            "x": 125.46875,
+            "y": 284.328125,
+            "right": 264.515625,
+            "bottom": 326.171875
+          },
+          {
+            "text": "按機器的實際使用量分配成本。",
+            "x": 110.984375,
+            "y": 337.171875,
+            "right": 278.984375,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 usage card 1: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 usage card 2: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 2 / 5",
+            "x": 168.265625,
+            "y": 237.03125,
+            "right": 221.703125,
+            "bottom": 251.03125
+          },
+          {
+            "text": "機器成本",
+            "x": 158.984375,
+            "y": 262.03125,
+            "right": 230.984375,
+            "bottom": 288.125
+          },
+          {
+            "text": "$54,000",
+            "x": 129.5625,
+            "y": 299.125,
+            "right": 260.40625,
+            "bottom": 340.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 usage card 2: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 usage card 3: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 3 / 5",
+            "x": 168.265625,
+            "y": 237.03125,
+            "right": 221.703125,
+            "bottom": 251.03125
+          },
+          {
+            "text": "估計殘值",
+            "x": 158.984375,
+            "y": 262.03125,
+            "right": 230.984375,
+            "bottom": 288.125
+          },
+          {
+            "text": "$6,000",
+            "x": 139.78125,
+            "y": 299.125,
+            "right": 250.203125,
+            "bottom": 340.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 usage card 3: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 usage card 4: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 4 / 5",
+            "x": 168.265625,
+            "y": 237.03125,
+            "right": 221.703125,
+            "bottom": 251.03125
+          },
+          {
+            "text": "估計總使用量",
+            "x": 140.984375,
+            "y": 262.03125,
+            "right": 248.984375,
+            "bottom": 288.125
+          },
+          {
+            "text": "12,000 次",
+            "x": 118.3125,
+            "y": 299.125,
+            "right": 271.65625,
+            "bottom": 340.96875
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 usage card 4: no side panel or duplicate case background"
+    },
+    {
+      "name": "390 usage card 5: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 46.3125,
+        "y": 138.5,
+        "right": 343.671875,
+        "bottom": 439.5,
+        "canvas": {
+          "x": 18,
+          "y": 74,
+          "right": 372,
+          "bottom": 504
+        },
+        "children": [
+          {
+            "text": "情境 5 / 5",
+            "x": 168.265625,
+            "y": 222.234375,
+            "right": 221.703125,
+            "bottom": 236.234375
+          },
+          {
+            "text": "生產訂單",
+            "x": 158.984375,
+            "y": 247.234375,
+            "right": 230.984375,
+            "bottom": 273.328125
+          },
+          {
+            "text": "按用量切",
+            "x": 125.46875,
+            "y": 284.328125,
+            "right": 264.515625,
+            "bottom": 326.171875
+          },
+          {
+            "text": "每年會收到一張訂單。",
+            "x": 134.984375,
+            "y": 337.171875,
+            "right": 254.984375,
+            "bottom": 355.765625
+          }
+        ]
+      }
+    },
+    {
+      "name": "390 usage card 5: no side panel or duplicate case background"
+    },
+    {
+      "name": "390: usage mode routing and first slice preserved"
+    },
+    {
+      "name": "All refreshed UI paths run offline without external requests",
+      "detail": []
+    },
+    {
+      "name": "All refreshed UI paths have no JavaScript page errors",
+      "detail": []
+    },
+    {
+      "name": "844 revised pause: compact panel fits fully inside canvas",
+      "detail": {
+        "panel": {
+          "x": 212,
+          "y": 142.515625,
+          "width": 420,
+          "height": 169.390625
+        },
+        "canvas": {
+          "x": 18,
+          "y": 105.4375,
+          "width": 808,
+          "height": 243.5625
+        }
+      }
+    },
+    {
+      "name": "844 revised pause: visible buttons have accessible names and 44 px targets",
+      "detail": []
+    },
+    {
+      "name": "844 revised pause: resume works"
+    },
+    {
+      "name": "844 revised case 1: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 1 / 6",
+            "x": 395.28125,
+            "y": 144.0625,
+            "right": 448.71875,
+            "bottom": 158.0625
+          },
+          {
+            "text": "公司購入另一部機器",
+            "x": 323,
+            "y": 163.0625,
+            "right": 521,
+            "bottom": 192.75
+          },
+          {
+            "text": "開始使用",
+            "x": 343.59375,
+            "y": 197.75,
+            "right": 500.40625,
+            "bottom": 242.546875
+          },
+          {
+            "text": "從 2026 年起，按完整年度計算。",
+            "x": 332.703125,
+            "y": 247.546875,
+            "right": 511.296875,
+            "bottom": 264.9375
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 revised case 1: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 revised case 1: detail stays clear of perforation",
+      "detail": {
+        "detailBottom": 264.9375,
+        "perforation": 278.315
+      }
+    },
+    {
+      "name": "844 revised case 2: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 2 / 6",
+            "x": 395.28125,
+            "y": 155.25,
+            "right": 448.71875,
+            "bottom": 169.25
+          },
+          {
+            "text": "資產成本",
+            "x": 378,
+            "y": 174.25,
+            "right": 466,
+            "bottom": 203.9375
+          },
+          {
+            "text": "$40,000",
+            "x": 348.21875,
+            "y": 208.9375,
+            "right": 495.765625,
+            "bottom": 253.734375
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 revised case 2: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 revised case 3: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 3 / 6",
+            "x": 395.28125,
+            "y": 144.0625,
+            "right": 448.71875,
+            "bottom": 158.0625
+          },
+          {
+            "text": "折舊率",
+            "x": 389,
+            "y": 163.0625,
+            "right": 455,
+            "bottom": 192.75
+          },
+          {
+            "text": "40%",
+            "x": 381.3125,
+            "y": 197.75,
+            "right": 462.671875,
+            "bottom": 242.546875
+          },
+          {
+            "text": "一般年度按期初帳面淨值計算。",
+            "x": 338,
+            "y": 247.546875,
+            "right": 506,
+            "bottom": 264.9375
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 revised case 3: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 revised case 3: detail stays clear of perforation",
+      "detail": {
+        "detailBottom": 264.9375,
+        "perforation": 278.315
+      }
+    },
+    {
+      "name": "844 revised case 4: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 4 / 6",
+            "x": 395.28125,
+            "y": 144.0625,
+            "right": 448.71875,
+            "bottom": 158.0625
+          },
+          {
+            "text": "估計可使用年期",
+            "x": 345,
+            "y": 163.0625,
+            "right": 499,
+            "bottom": 192.75
+          },
+          {
+            "text": "5 年",
+            "x": 386.28125,
+            "y": 197.75,
+            "right": 457.71875,
+            "bottom": 242.546875
+          },
+          {
+            "text": "第 5 年是最後一年。",
+            "x": 367.421875,
+            "y": 247.546875,
+            "right": 476.578125,
+            "bottom": 264.9375
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 revised case 4: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 revised case 4: detail stays clear of perforation",
+      "detail": {
+        "detailBottom": 264.9375,
+        "perforation": 278.315
+      }
+    },
+    {
+      "name": "844 revised case 5: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 5 / 6",
+            "x": 395.28125,
+            "y": 155.25,
+            "right": 448.71875,
+            "bottom": 169.25
+          },
+          {
+            "text": "估計殘值",
+            "x": 378,
+            "y": 174.25,
+            "right": 466,
+            "bottom": 203.9375
+          },
+          {
+            "text": "$0",
+            "x": 398.96875,
+            "y": 208.9375,
+            "right": 445.03125,
+            "bottom": 253.734375
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 revised case 5: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 revised case 6: current fact and all caption text fit the case card",
+      "detail": {
+        "x": 112,
+        "y": 104.75,
+        "right": 732,
+        "bottom": 304.25,
+        "canvas": {
+          "x": 18,
+          "y": 62,
+          "right": 826,
+          "bottom": 347
+        },
+        "children": [
+          {
+            "text": "情境 6 / 6",
+            "x": 395.28125,
+            "y": 144.0625,
+            "right": 448.71875,
+            "bottom": 158.0625
+          },
+          {
+            "text": "最後一年",
+            "x": 378,
+            "y": 163.0625,
+            "right": 466,
+            "bottom": 192.75
+          },
+          {
+            "text": "切清餘額",
+            "x": 343.59375,
+            "y": 197.75,
+            "right": 500.40625,
+            "bottom": 242.546875
+          },
+          {
+            "text": "本例到期時，全數折舊至殘值。",
+            "x": 338,
+            "y": 247.546875,
+            "right": 506,
+            "bottom": 264.9375
+          }
+        ]
+      }
+    },
+    {
+      "name": "844 revised case 6: no side panel or duplicate case background"
+    },
+    {
+      "name": "844 revised case 6: detail stays clear of perforation",
+      "detail": {
+        "detailBottom": 264.9375,
+        "perforation": 278.315
+      }
+    },
+    {
+      "name": "844 revised case: real card swipes still enter lesson"
+    },
+    {
+      "name": "Latest landscape refinements have no errors or external requests",
+      "detail": {
+        "errors": [],
+        "external": []
+      }
+    },
+    {
+      "name": "1280 final locked menu: fruit reward shows +10 points",
+      "detail": "水果 +10 分 · 炸彈 −50 分"
+    },
+    {
+      "name": "1280 final locked menu: no horizontal page overflow",
+      "detail": {
+        "width": 1280,
+        "html": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "name": "1280 final unlocked menu: fruit reward shows +10 points",
+      "detail": "水果 +10 分 · 炸彈 −50 分"
+    },
+    {
+      "name": "1280 final unlocked menu: no horizontal page overflow",
+      "detail": {
+        "width": 1280,
+        "html": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "name": "1024 final locked menu: fruit reward shows +10 points",
+      "detail": "水果 +10 分 · 炸彈 −50 分"
+    },
+    {
+      "name": "1024 final locked menu: no horizontal page overflow",
+      "detail": {
+        "width": 1024,
+        "html": 1024,
+        "body": 1024
+      }
+    },
+    {
+      "name": "1024 final unlocked menu: fruit reward shows +10 points",
+      "detail": "水果 +10 分 · 炸彈 −50 分"
+    },
+    {
+      "name": "1024 final unlocked menu: no horizontal page overflow",
+      "detail": {
+        "width": 1024,
+        "html": 1024,
+        "body": 1024
+      }
+    },
+    {
+      "name": "844 final locked menu: fruit reward shows +10 points",
+      "detail": "水果 +10 分 · 炸彈 −50 分"
+    },
+    {
+      "name": "844 final locked menu: no horizontal page overflow",
+      "detail": {
+        "width": 844,
+        "html": 844,
+        "body": 844
+      }
+    },
+    {
+      "name": "844 final unlocked menu: fruit reward shows +10 points",
+      "detail": "水果 +10 分 · 炸彈 −50 分"
+    },
+    {
+      "name": "844 final unlocked menu: no horizontal page overflow",
+      "detail": {
+        "width": 844,
+        "html": 844,
+        "body": 844
+      }
+    },
+    {
+      "name": "390 final locked menu: fruit reward shows +10 points",
+      "detail": "水果 +10 分 · 炸彈 −50 分"
+    },
+    {
+      "name": "390 final locked menu: no horizontal page overflow",
+      "detail": {
+        "width": 390,
+        "html": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "390 final unlocked menu: fruit reward shows +10 points",
+      "detail": "水果 +10 分 · 炸彈 −50 分"
+    },
+    {
+      "name": "390 final unlocked menu: no horizontal page overflow",
+      "detail": {
+        "width": 390,
+        "html": 390,
+        "body": 390
+      }
+    },
+    {
+      "name": "Final menu wording refresh has no errors or external requests",
+      "detail": {
+        "errors": [],
+        "external": []
+      }
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "externalRequests": [],
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 850
+    },
+    {
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "width": 844,
+      "height": 390
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "metrics": [
+    {
+      "label": "1280 free play",
+      "canvas": {
+        "x": 42,
+        "y": 165.984375,
+        "width": 1196,
+        "height": 626.015625
+      }
+    },
+    {
+      "label": "1280 case intro",
+      "canvas": {
+        "x": 42,
+        "y": 80.34375,
+        "width": 1196,
+        "height": 707.65625
+      }
+    },
+    {
+      "label": "1280 reducing cut",
+      "canvas": {
+        "x": 42,
+        "y": 138.34375,
+        "width": 1196,
+        "height": 653.65625
+      }
+    },
+    {
+      "label": "1024 free play",
+      "canvas": {
+        "x": 30,
+        "y": 165.984375,
+        "width": 964,
+        "height": 544.015625
+      }
+    },
+    {
+      "label": "1024 case intro",
+      "canvas": {
+        "x": 30,
+        "y": 80.34375,
+        "width": 964,
+        "height": 625.65625
+      }
+    },
+    {
+      "label": "1024 reducing cut",
+      "canvas": {
+        "x": 30,
+        "y": 138.34375,
+        "width": 964,
+        "height": 571.65625
+      }
+    },
+    {
+      "label": "844 free play",
+      "canvas": {
+        "x": 18,
+        "y": 105.4375,
+        "width": 808,
+        "height": 243.5625
+      }
+    },
+    {
+      "label": "844 case intro",
+      "canvas": {
+        "x": 18,
+        "y": 62,
+        "width": 808,
+        "height": 285
+      }
+    },
+    {
+      "label": "844 reducing cut",
+      "canvas": {
+        "x": 18,
+        "y": 105.4375,
+        "width": 808,
+        "height": 243.5625
+      }
+    },
+    {
+      "label": "390 free play",
+      "canvas": {
+        "x": 18,
+        "y": 146.390625,
+        "width": 354,
+        "height": 430
+      }
+    },
+    {
+      "label": "390 case intro",
+      "canvas": {
+        "x": 18,
+        "y": 74,
+        "width": 354,
+        "height": 430
+      }
+    },
+    {
+      "label": "390 reducing cut",
+      "canvas": {
+        "x": 18,
+        "y": 128,
+        "width": 354,
+        "height": 430
+      }
+    }
+  ]
+}

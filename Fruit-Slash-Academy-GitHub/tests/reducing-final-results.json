@@ -1,0 +1,23 @@
+{
+  "passed": 8,
+  "checks": [
+    "Six separate case cards explain the five-year useful life, zero residual and final-year rule",
+    "The first four years use 40% of their opening values and their slice widths decrease",
+    "The final-year target reaches the fruit edge and the prompt replaces the ordinary 40% instruction",
+    "Cutting just 40% in the final year is rejected without advancing",
+    "A touch slice at the small final edge clears the entire $5,184 balance and leaves no residual fruit",
+    "Results show $5,184 final depreciation, $40,000 accumulated depreciation and $0 closing value with the final-year formula",
+    "Phone touch input also accepts the final fruit-edge slice and completes without horizontal overflow",
+    "Reducing-balance final-year interactions work offline without JavaScript errors"
+  ],
+  "cards": [
+    "公司購入另一部機器 開始使用 從 2026 年起，按完整年度計算。",
+    "資產成本 $40,000 ",
+    "折舊率 40% 一般年度按期初帳面淨值計算。",
+    "估計可使用年期 5 年 第 5 年是最後一年。",
+    "估計殘值 $0 ",
+    "最後一年 切清餘額 本例到期時，全數折舊至殘值。"
+  ],
+  "errors": [],
+  "externalRequests": []
+}

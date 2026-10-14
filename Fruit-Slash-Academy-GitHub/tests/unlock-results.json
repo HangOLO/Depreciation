@@ -1,0 +1,29 @@
+{
+  "passed": 22,
+  "checks": [
+    "Fresh visitors can play only free mode; every depreciation method is visibly locked",
+    "The removed observation option is absent from the interface and active settings",
+    "Locked mode handlers reject forced click events before any training",
+    "Aborting a free round leaves all methods locked, including after reload",
+    "Completing a full free round unlocks straight line alone and announces that single unlock",
+    "Training progress persists and both later methods remain protected by the start guard",
+    "Opening then leaving the straight-line background does not unlock another method",
+    "Reading every case fact and cutting one year still leaves the two later methods locked",
+    "Three completed straight-line years are insufficient to unlock the other methods",
+    "Four real annual slices and the completed result unlock reducing balance and usage together",
+    "Saved straight-line completion survives reload and both newly available lesson cards open",
+    "Replaying free mode after straight-line completion preserves all unlocked lessons",
+    "Reset clears training and straight-line completion and saves the original lock state",
+    "After reset, a new completed warm-up unlocks straight line alone again",
+    "Legacy training records without straight-line completion keep both later lessons locked and preserve scores",
+    "A saved straight-line flag cannot bypass the required completed free round",
+    "Legacy observation=true with completed straight line is removed on load, restores all lessons and preserves progress/settings",
+    "Legacy observation=true with training only is removed without falsely completing or unlocking later lessons",
+    "Migrated training-only players genuinely complete straight line and unlock both other methods permanently",
+    "1024px staged menu keeps both six-character prerequisite labels readable inside their cards",
+    "390px staged menu keeps both six-character prerequisite labels readable inside their cards",
+    "The staged unlock paths run offline without JavaScript errors or network requests"
+  ],
+  "errors": [],
+  "externalRequests": []
+}
