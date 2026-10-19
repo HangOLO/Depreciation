@@ -72,7 +72,7 @@
       card('公司購入另一部機器','開始使用','從 2026 年起，按完整年度計算。'),
       card('購入成本',fmt(model.cost)),card('折舊率',`${model.rate*100}%`,'一般年度按期初帳面淨值計算。'),
       card('示範年度',`${model.years} 年`,`${model.rows[0].year}–${model.rows.at(-1).year}，計算至達到殘值。`),
-      card('估計殘值',fmt(model.residual)),card('殘值下限',`保留 ${fmt(model.residual)}`,'達到殘值後，毋須繼續折舊。')
+      card('估計殘值',fmt(model.residual))
     ];
     return[
       card('水果加工廠購入機器','準備開工','按機器的實際使用量分配成本。'),

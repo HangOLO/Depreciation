@@ -31,7 +31,7 @@ The `tests/` folder and documentation are included for development and reference
 2. **Straight-line Depreciation:** complete all four annual cuts to unlock the other two methods. Entering the lesson or leaving halfway through does not unlock them.
 3. **Further lessons:** choose Reducing-balance Depreciation or Usage-based Depreciation.
 
-Each lesson introduces its case **one fact at a time**. Swipe through a case card to reveal the next fact; cut the final card to enter the cutting screen. Straight-line, reducing-balance and usage-based lessons contain eight, six and five cards respectively.
+Each lesson introduces its case **one fact at a time**. Swipe through a case card to reveal the next fact; cut the final card to enter the cutting screen. Straight-line, reducing-balance and usage-based lessons contain eight, five and five cards respectively.
 
 During cutting, the screen shows the current task, year, remaining value and fruit. Formulas and the full depreciation table appear on the results page.
 

@@ -42,7 +42,7 @@ const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-9,`${a} should equal ${b}`);
     assert.equal((await page.locator('.reducing-card .small-ratio').innerText()).trim(),'50%');
     ok(`${width}: menu badge displays the updated 50% rate`);
     await page.locator('button[data-mode="reducing"]').click();
-    assert.equal((await snap()).intro.total,6);
+    assert.equal((await snap()).intro.total,5);
     const cards=[];
     while((await snap()).state==='CASE_INTRO'){
       const s=await snap(),g=s.intro.geometry;
@@ -53,6 +53,8 @@ const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-9,`${a} should equal ${b}`);
       assert.equal((await snap()).intro.anim,true);await advance(650);
     }
     caseCards[width]=cards;
+    assert.equal(cards.length,5);
+    assert.equal(cards.some(c=>c.includes('殘值下限')),false);
     assert.equal((await snap()).state,'REDUCING_BALANCE');
     assert.ok(cards.some(c=>c.includes('$160,000')));
     assert.ok(cards.some(c=>c.includes('50%')));
@@ -61,7 +63,7 @@ const near=(a,b)=>assert.ok(Math.abs(a-b)<1e-9,`${a} should equal ${b}`);
     assert.equal(cards.some(c=>c.includes('$40,000')||c.includes('40%')||c.includes('切清餘額')||c.includes('2030')||c.includes('可使用年期')),false);
     assert.equal((await snap()).level.rows.length,4);
     assert.deepEqual((await snap()).level.rows.map(r=>r.year),[2026,2027,2028,2029]);
-    ok(`${width}: six genuine case-card swipes explain $160,000 cost, 50% rate, four demonstration years and $10,000 residual`);
+    ok(`${width}: five genuine case-card swipes explain $160,000 cost, 50% rate, four demonstration years and $10,000 residual`);
     const sliceWidths=[];
     for(let i=0;i<4;i++){
       const s=await snap(),g=s.level.geometry;sliceWidths.push(g.cut);

@@ -2,13 +2,13 @@
   "passed": 13,
   "checks": [
     "1024: menu badge displays the updated 50% rate",
-    "1024: six genuine case-card swipes explain $160,000 cost, 50% rate, four demonstration years and $10,000 residual",
+    "1024: five genuine case-card swipes explain $160,000 cost, 50% rate, four demonstration years and $10,000 residual",
     "1024: four 50% cuts decrease from $80,000 to $10,000, while cuts inside the residual strip are rejected",
     "1024: the fourth cut leaves only $10,000 residual, with no 2030 target or additional zero-depreciation year",
     "1024: results show exactly four rows through 2029 and preserve $10,000, with no 2030 preview or watermelon-rind art",
     "1024: replay returns to the first case card",
     "390: menu badge displays the updated 50% rate",
-    "390: six genuine case-card swipes explain $160,000 cost, 50% rate, four demonstration years and $10,000 residual",
+    "390: five genuine case-card swipes explain $160,000 cost, 50% rate, four demonstration years and $10,000 residual",
     "390: four 50% cuts decrease from $80,000 to $10,000, while cuts inside the residual strip are rejected",
     "390: the fourth cut leaves only $10,000 residual, with no 2030 target or additional zero-depreciation year",
     "390: results show exactly four rows through 2029 and preserve $10,000, with no 2030 preview or watermelon-rind art",
@@ -21,16 +21,14 @@
       "購入成本 $160,000 ",
       "折舊率 50% 一般年度按期初帳面淨值計算。",
       "示範年度 4 年 2026–2029，計算至達到殘值。",
-      "估計殘值 $10,000 ",
-      "殘值下限 保留 $10,000 達到殘值後，毋須繼續折舊。"
+      "估計殘值 $10,000 "
     ],
     "1024": [
       "公司購入另一部機器 開始使用 從 2026 年起，按完整年度計算。",
       "購入成本 $160,000 ",
       "折舊率 50% 一般年度按期初帳面淨值計算。",
       "示範年度 4 年 2026–2029，計算至達到殘值。",
-      "估計殘值 $10,000 ",
-      "殘值下限 保留 $10,000 達到殘值後，毋須繼續折舊。"
+      "估計殘值 $10,000 "
     ]
   },
   "errors": [],
