@@ -126,13 +126,16 @@ async function usage(p){
   ok('Usage-based depreciation still preserves $6,000 and does not label its papaya peel as watermelon');
 }
 async function reducing(p){
-  await p.locator('#resultMenuBtn').click();await open(p,'reducing');assert.equal((await snap(p)).level.rows.length,5);
-  for(let i=0;i<5;i++){
-    const g=(await snap(p)).level.geometry;assert.equal(g.residual,0);await vertical(p,g);assert.equal((await snap(p)).level.anim,true);await advance(p,900);
+  await p.locator('#resultMenuBtn').click();await open(p,'reducing');assert.equal((await snap(p)).level.rows.length,4);
+  for(let i=0;i<4;i++){
+    const g=(await snap(p)).level.geometry;near(g.residual/g.full,10000/160000);await vertical(p,g);assert.equal((await snap(p)).level.anim,true);await advance(p,900);
   }
-  near((await snap(p)).level.geometry.width,0);await advance(p,1000);assert.equal((await snap(p)).state,'LEVEL_RESULTS');
-  assert.equal((await snap(p)).level.rows.at(-1).closing,0);assert.equal(await p.locator('.residual-result').count(),0);
-  ok('Five-year reducing balance fully depreciates to $0 and has no retained-peel result');
+  const g=(await snap(p)).level.geometry;near(g.width,g.residual);assert.equal(g.row.depreciation,0);await vertical(p,g);assert.equal((await snap(p)).level.anim,false);
+  await advance(p,1000);assert.equal((await snap(p)).state,'LEVEL_RESULTS');
+  assert.equal((await snap(p)).level.rows.at(-1).closing,10000);assert.equal(await p.locator('.residual-result').count(),1);
+  assert.ok((await p.locator('.residual-result').innerText()).includes('$10,000'));assert.equal(await p.locator('.residual-rind, [data-result-residual]').count(),0);
+  assert.equal((await snap(p)).level.rows.at(-1).year,2029);assert.equal((await p.locator('#resultContent').innerText()).includes('2030'),false);
+  ok('Four-year reducing-balance demonstration stops in 2029 at $10,000 residual and has no watermelon-rind illustration');
 }
 (async()=>{
   browser=await chromium.launch(launchOptions);

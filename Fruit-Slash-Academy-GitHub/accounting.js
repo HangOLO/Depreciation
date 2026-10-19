@@ -64,8 +64,8 @@
     };
   }
 
-  function reducing({ cost = 40000, rate = 0.4, years = 5,
-    usefulLife = 5, residual = 0, startYear = 2026 } = {}) {
+  function reducing({ cost = 160000, rate = 0.5, years = 4,
+    usefulLife = 5, residual = 10000, startYear = 2026 } = {}) {
     checkResidual(cost, residual);
     checkNumber(rate, 'rate', 0);
     if (rate > 1) throw new RangeError('rate cannot exceed 1');

@@ -53,27 +53,26 @@ test('straight line preserves the residual with other costs and useful lives', (
   checkConservation(lesson);
 });
 
-test('reducing balance applies 40% before writing off the remaining balance in the final useful year', () => {
+test('reducing balance applies 50% and demonstrates four years ending at the $10,000 residual', () => {
   const lesson = Accounting.reducing();
-  assert.equal(lesson.rate, 0.4);
-  assert.equal(lesson.cost, 40000);
-  assert.equal(lesson.years, 5);
+  assert.equal(lesson.rate, 0.5);
+  assert.equal(lesson.cost, 160000);
+  assert.equal(lesson.years, 4);
   assert.equal(lesson.usefulLife, 5);
-  assert.equal(lesson.residual, 0);
-  assert.equal(lesson.depreciable, 40000);
+  assert.equal(lesson.residual, 10000);
+  assert.equal(lesson.depreciable, 150000);
   assert.deepEqual(lesson.rows, [
-    { year: 2026, opening: 40000, depreciation: 16000, accumulated: 16000, closing: 24000, finalYear: false },
-    { year: 2027, opening: 24000, depreciation: 9600, accumulated: 25600, closing: 14400, finalYear: false },
-    { year: 2028, opening: 14400, depreciation: 5760, accumulated: 31360, closing: 8640, finalYear: false },
-    { year: 2029, opening: 8640, depreciation: 3456, accumulated: 34816, closing: 5184, finalYear: false },
-    { year: 2030, opening: 5184, depreciation: 5184, accumulated: 40000, closing: 0, finalYear: true }
+    { year: 2026, opening: 160000, depreciation: 80000, accumulated: 80000, closing: 80000, finalYear: false },
+    { year: 2027, opening: 80000, depreciation: 40000, accumulated: 120000, closing: 40000, finalYear: false },
+    { year: 2028, opening: 40000, depreciation: 20000, accumulated: 140000, closing: 20000, finalYear: false },
+    { year: 2029, opening: 20000, depreciation: 10000, accumulated: 150000, closing: 10000, finalYear: false }
   ]);
   assert.equal(Object.hasOwn(lesson, 'annual'), false);
   checkConservation(lesson);
 });
 
 test('a shortened reducing balance display does not fully depreciate before the useful life ends', () => {
-  const lesson = Accounting.reducing({ years: 2, usefulLife: 3 });
+  const lesson = Accounting.reducing({ cost: 40000, rate: 0.4, residual: 0, years: 2, usefulLife: 3 });
   assert.deepEqual(lesson.rows.map(row => row.depreciation), [16000, 9600]);
   assert.equal(lesson.rows.at(-1).closing, 14400);
   assert.ok(lesson.rows.every(row => !row.finalYear));
@@ -81,27 +80,27 @@ test('a shortened reducing balance display does not fully depreciate before the 
 });
 
 test('reducing balance retains the estimated residual in the final useful year', () => {
-  const lesson = Accounting.reducing({ residual: 6000, years: 3, usefulLife: 3 });
+  const lesson = Accounting.reducing({ cost: 40000, rate: 0.4, residual: 6000, years: 3, usefulLife: 3 });
   assert.deepEqual(lesson.rows.map(row => row.depreciation), [16000, 9600, 8400]);
   assert.equal(lesson.depreciable, 34000);
   assert.equal(lesson.rows.at(-1).accumulated, 34000);
   assert.equal(lesson.rows.at(-1).closing, 6000);
   checkConservation(lesson);
-  const fiveYearLesson = Accounting.reducing({ residual: 1000 });
+  const fiveYearLesson = Accounting.reducing({ cost: 40000, rate: 0.4, residual: 1000, years: 5, usefulLife: 5 });
   assert.deepEqual(fiveYearLesson.rows.map(row => row.depreciation), [16000, 9600, 5760, 3456, 4184]);
   assert.equal(fiveYearLesson.rows.at(-1).closing, 1000);
   checkConservation(fiveYearLesson);
 });
 
 test('reducing balance clamps a high rate to the residual before the final year', () => {
-  const lesson = Accounting.reducing({ rate: 0.9, residual: 6000, years: 3, usefulLife: 3 });
+  const lesson = Accounting.reducing({ cost: 40000, rate: 0.9, residual: 6000, years: 3, usefulLife: 3 });
   assert.deepEqual(lesson.rows.map(row => row.depreciation), [34000, 0, 0]);
   assert.ok(lesson.rows.every(row => row.closing === 6000));
   checkConservation(lesson);
 });
 
 test('a one-year reducing balance life depreciates only the cost less residual', () => {
-  const lesson = Accounting.reducing({ years: 1, usefulLife: 1, residual: 6000 });
+  const lesson = Accounting.reducing({ cost: 40000, rate: 0.4, years: 1, usefulLife: 1, residual: 6000 });
   assert.equal(lesson.rows[0].depreciation, 34000);
   assert.equal(lesson.rows[0].closing, 6000);
   assert.equal(lesson.rows[0].finalYear, true);
@@ -111,7 +110,7 @@ test('a one-year reducing balance life depreciates only the cost less residual',
 test('reducing balance rejects invalid useful lives, display horizons and residual values', () => {
   for (const input of [
     { years: 0 }, { years: 1.5 }, { usefulLife: 0 }, { usefulLife: 1.5 },
-    { years: 4, usefulLife: 3 }, { residual: -1 }, { residual: 40001 }
+    { years: 4, usefulLife: 3 }, { residual: -1 }, { cost: 40000, residual: 40001 }
   ]) {
     assert.throws(() => Accounting.reducing(input), RangeError);
   }

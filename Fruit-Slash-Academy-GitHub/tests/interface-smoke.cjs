@@ -189,11 +189,12 @@ async function cutYear(page) {
     await stage(q,`${w} case intro`,viewport);await caption(q,`${w} initial case`);await screenshot(q,'case',w);
     await readCase(q,`${w} reducing`);
     let s=await snapshot(q);
-    check(`${w}: real card swipes enter minimal five-year lesson`,s.state==='REDUCING_BALANCE'&&s.level.rows.length===5&&!await q.locator('#caseCaption').isVisible()&&!await q.locator('#factPanel').isVisible());
+    check(`${w}: real card swipes enter minimal four-year demonstration`,s.state==='REDUCING_BALANCE'&&s.level.rows.length===4&&!await q.locator('#caseCaption').isVisible()&&!await q.locator('#factPanel').isVisible());
     await stage(q,`${w} reducing cut`,viewport);await screenshot(q,'cut',w);
-    for(let year=0;year<5;year++){await cutYear(q);assert.equal((await snapshot(q)).level.anim,true);await advance(q,900);}
+    for(let year=0;year<4;year++){await cutYear(q);assert.equal((await snapshot(q)).level.anim,true);await advance(q,900);}
+    assert.equal((await snapshot(q)).level.index,4);await cutYear(q);assert.equal((await snapshot(q)).level.anim,false);
     await advance(q,1000);s=await snapshot(q);
-    check(`${w}: five-year lesson reaches results with zero final book value`,s.state==='LEVEL_RESULTS'&&s.level.rows.at(-1).closing===0&&s.level.rows.at(-1).depreciation===5184);
+    check(`${w}: four-year demonstration ends in 2029 with $10,000 residual`,s.state==='LEVEL_RESULTS'&&s.level.rows.length===4&&s.level.rows.at(-1).closing===10000&&s.level.rows.at(-1).depreciation===10000&&s.level.rows.at(-1).year===2029);
     await noOverflow(q,`${w} results`);await buttons(q,`${w} results`);await screenshot(q,'results',w);
     if(w===1280||w===390){
       await q.locator('#resultMenuBtn').click();

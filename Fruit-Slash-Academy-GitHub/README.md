@@ -51,12 +51,12 @@ During cutting, the screen shows the current task, year, remaining value and fru
 | Method | Case | Annual depreciation | Final carrying amount |
 | --- | --- | --- | --- |
 | Straight-line | Cost $54,000; residual $6,000; four years | $12,000 each year | $6,000 |
-| Reducing-balance | Cost $40,000; residual $0; five years; 40% rate | $16,000 / $9,600 / $5,760 / $3,456 / $5,184 | $0 |
+| Reducing-balance | Cost $160,000; residual $10,000; four calculation years; 50% rate | $80,000 / $40,000 / $20,000 / $10,000 | $10,000 |
 | Usage-based | Cost $54,000; residual $6,000; estimated total usage 12,000 | $12,000 / $18,000 / $0 / $18,000 | $6,000 |
 
 Straight-line cost includes purchase price $48,000, transport $2,000 and installation $4,000. The usage-based rate is $4 per use, with annual usage of 3,000 / 4,500 / 0 / 4,500. The zero-usage year advances automatically without a cut.
 
-The reducing-balance case explicitly assumes a five-year useful life and a final-year adjustment to residual value. Its last charge is the remaining $5,184; the game does not apply an early write-off when only part of the useful life is displayed.
+The reducing-balance case shows calculations for 2026–2029 only. It reaches the $10,000 residual-value floor after the fourth annual charge and then finishes, without an extra zero-depreciation year. Total depreciation is $150,000; carrying value never falls below $10,000.
 
 Fruit represents the allocation of asset cost, rather than resale price. Residual value is retained. The **straight-line cutting screen keeps its original red fruit and green rectangular residual area**. Only its completed results page uses a **watermelon-rind illustration** to show the retained $6,000.
 
@@ -75,6 +75,8 @@ Fruit represents the allocation of asset cost, rather than resale price. Residua
 | `TEST-RESULTS.md` | Verification details and test limitations |
 
 ## Verification
+
+The reducing-balance tests cover the updated cost, 50% rate, four annual cuts and $10,000 retained, including desktop and phone-sized browser runs. See `TEST-RESULTS.md` for the latest recorded checks.
 
 Recorded checks include 14 calculation/unlock tests, 19 full game-flow checks, 22 unlock and saved-progress checks, and 23 checks confirming the original cutting artwork and result-only rind. Earlier checks cover bombs, sequential case cards, five-year depreciation and responsive layouts.
 

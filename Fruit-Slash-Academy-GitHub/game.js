@@ -5,7 +5,7 @@
   const A = globalThis.Accounting, Art = globalThis.FruitArt;
   const STORAGE = 'fruit-slash-academy-v1';
   const STATES = Object.freeze({ MENU:'MENU', CASE:'CASE_INTRO', FREE:'FREE_SLASH', FREE_RESULTS:'FREE_RESULTS', UNLOCK:'UNLOCK_ANIMATION', SELECT:'MODE_SELECT', STRAIGHT:'STRAIGHT_LINE', REDUCING:'REDUCING_BALANCE', USAGE:'USAGE_BASED', RESULTS:'LEVEL_RESULTS', PAUSED:'PAUSED' });
-  const TITLES = {free:'自由切水果',straight:'直線法 · 平均切',reducing:'餘額遞減法 · 最後切清',usage:'按使用量法 · 用幾多，切幾多'};
+  const TITLES = {free:'自由切水果',straight:'直線法 · 平均切',reducing:'餘額遞減法 · 保留殘值',usage:'按使用量法 · 用幾多，切幾多'};
   const BOMB_PENALTY=50, BOMB_STUN=.65;
   let saved = {};
   try { saved = JSON.parse(localStorage.getItem(STORAGE) || '{}') || {}; } catch (_) { /* memory fallback */ }
@@ -70,9 +70,9 @@
     ];
     if(m==='reducing')return[
       card('公司購入另一部機器','開始使用','從 2026 年起，按完整年度計算。'),
-      card('資產成本',fmt(model.cost)),card('折舊率',`${model.rate*100}%`,'一般年度按期初帳面淨值計算。'),
-      card('估計可使用年期',`${model.usefulLife} 年`,`第 ${model.usefulLife} 年是最後一年。`),
-      card('估計殘值',fmt(model.residual)),card('最後一年','切清餘額','本例到期時，全數折舊至殘值。')
+      card('購入成本',fmt(model.cost)),card('折舊率',`${model.rate*100}%`,'一般年度按期初帳面淨值計算。'),
+      card('示範年度',`${model.years} 年`,`${model.rows[0].year}–${model.rows.at(-1).year}，計算至達到殘值。`),
+      card('估計殘值',fmt(model.residual)),card('殘值下限',`保留 ${fmt(model.residual)}`,'達到殘值後，毋須繼續折舊。')
     ];
     return[
       card('水果加工廠購入機器','準備開工','按機器的實際使用量分配成本。'),
@@ -94,8 +94,8 @@
     const model=level.model,row=model.rows[level.index];if(!row){$('progressFill').style.width='100%';return;}
     $('statLabel').textContent='年度';$('statValue').textContent=mode==='straight'?String(row.year):`${level.index+1} / ${model.rows.length}`;
     $('progressFill').style.width=`${level.index/model.rows.length*100}%`;
-    $('taskText').textContent=mode==='usage'?(row.usage===0?'今年使用 0 次':`訂單：使用 ${row.usage.toLocaleString('en-HK')} 次`):mode==='straight'?`切下 ${fmt(row.depreciation)}`:row.finalYear?`最後一年：切清剩餘 ${fmt(row.depreciation)}`:`切走剩餘的 ${model.rate*100}%`;
-    $('gameHint').textContent=mode==='reducing'&&row.finalYear?'期初帳面淨值 − 殘值':row.depreciation===0?'按使用量法：沒有使用，折舊 $0。':settings.hints?'沿光線向下切':'由上向下切';
+    $('taskText').textContent=mode==='usage'?(row.usage===0?'今年使用 0 次':`訂單：使用 ${row.usage.toLocaleString('en-HK')} 次`):row.depreciation===0?'已達殘值：本年折舊 $0':mode==='straight'?`切下 ${fmt(row.depreciation)}`:row.finalYear?`最後一年：折舊 ${fmt(row.depreciation)}`:`切走剩餘的 ${model.rate*100}%`;
+    $('gameHint').textContent=row.depreciation===0?(mode==='usage'?'按使用量法：沒有使用，折舊 $0。':`保留估計殘值 ${fmt(model.residual)}，毋須切割。`):mode==='reducing'&&row.finalYear?'期初帳面淨值 − 殘值':settings.hints?'沿光線向下切':'由上向下切';
   }
   function geometry(){const model=level.model,complete=level.index>=model.rows.length,row=complete?{...model.rows.at(-1),opening:model.rows.at(-1).closing,depreciation:0}:model.rows[level.index],full=W*.84,x=W*.08,y=H*.33,h=Math.min(122,H*.22);return{x,y,h,full,width:full*row.opening/model.cost,cut:full*row.depreciation/model.cost,residual:full*model.residual/model.cost,row};}
   function spawnWave(){
@@ -176,17 +176,17 @@
   function finishLevel(){
     const unlockOthers=mode==='straight'&&!progress.completed.includes('straight');
     state=STATES.RESULTS;gesture=null;AudioFX.win();if(!progress.completed.includes(mode))progress.completed.push(mode);save();
-    const model=level.model,title=mode==='straight'?'完美平均切割！':mode==='reducing'?'最後一年，折舊完成！':'生產訂單，全部完成！';
-    const message=mode==='straight'?'直線法：每年折舊額相同！':mode==='reducing'?`一般年度按 ${model.rate*100}% 計算；最後一年折舊至殘值。`:'用得越多，折舊越多！';
-    const formula=mode==='straight'?'年度折舊 =（成本 − 估計殘值）÷ 估計可使用年期':mode==='reducing'?'一般年度折舊 = 期初帳面淨值 × 折舊率<br>最後一年折舊 = 期初帳面淨值 − 估計殘值':'年度折舊 =（成本 − 估計殘值）÷ 估計總使用量 × 當期實際使用量';
+    const model=level.model,title=mode==='straight'?'完美平均切割！':mode==='reducing'?'折舊完成，保留殘值！':'生產訂單，全部完成！';
+    const message=mode==='straight'?'直線法：每年折舊額相同！':mode==='reducing'?`按期初帳面淨值的 ${model.rate*100}% 折舊；達到殘值後停止折舊。`:'用得越多，折舊越多！';
+    const formula=mode==='straight'?'年度折舊 =（成本 − 估計殘值）÷ 估計可使用年期':mode==='reducing'?'一般年度折舊 = 期初帳面淨值 × 折舊率<br>以估計殘值為下限；達到殘值後，年度折舊 = $0':'年度折舊 =（成本 − 估計殘值）÷ 估計總使用量 × 當期實際使用量';
     $('resultContent').innerHTML=`<span class="eyebrow">CHALLENGE COMPLETE</span><h1>${title}</h1><p class="result-message">${message}</p><div class="result-fruit-row">${model.rows.map((r,i)=>`<div class="result-fruit-piece"><canvas data-result-piece="${i}" width="160" height="110"></canvas><strong>${r.year}</strong><span>${fmt(r.depreciation)}</span></div>`).join('')}${model.residual?`<div class="residual-result ${mode==='straight'?'residual-rind':''}">${mode==='straight'?`<canvas data-result-residual width="320" height="220" role="img" aria-label="西瓜皮代表保留殘值 ${fmt(model.residual)}"></canvas><div class="residual-copy"><span>保留殘值 · 西瓜皮</span><strong>${fmt(model.residual)}</strong></div>`:`<span>保留殘值</span><strong>${fmt(model.residual)}</strong>`}</div>`:''}</div><div class="formula">${formula}</div>${tableHTML(model)}<p class="result-caveat">${mode==='usage'?'第 3 年使用量為 0，所以本法折舊為 $0；其他折舊方法不能一概當作停用就沒有折舊。':'水果形狀只用作切割比喻；現實應按資產經濟利益的消耗模式選擇折舊方法。'}</p>`;
-    const calculation=mode==='straight'?`(${fmt(model.cost)} − ${fmt(model.residual)}) ÷ ${model.years} = ${fmt(model.annual)}`:mode==='reducing'?`最後一年：${fmt(model.rows.at(-1).opening)} − ${fmt(model.residual)} = ${fmt(model.rows.at(-1).depreciation)}`:`每次：(${fmt(model.cost)} − ${fmt(model.residual)}) ÷ ${model.totalUsage.toLocaleString('en-HK')} = ${fmt(model.perUse)}`;
+    const calculation=mode==='straight'?`(${fmt(model.cost)} − ${fmt(model.residual)}) ÷ ${model.years} = ${fmt(model.annual)}`:mode==='reducing'?`最後一筆折舊：${fmt(model.rows.at(-1).opening)} − ${fmt(model.rows.at(-1).closing)} = ${fmt(model.rows.at(-1).depreciation)}`:`每次：(${fmt(model.cost)} − ${fmt(model.residual)}) ÷ ${model.totalUsage.toLocaleString('en-HK')} = ${fmt(model.perUse)}`;
     $('resultContent').querySelector('.formula').insertAdjacentHTML('beforeend',`<br><small>${calculation}</small>`);
-    if(mode==='reducing')$('resultContent').querySelector('.result-caveat').textContent=`本例設定可使用 ${model.usefulLife} 年、殘值 ${fmt(model.residual)}，最後一年全數折舊剩餘金額。最後一年的調整可高於上一年；並非只因顯示到某年就把資產全數折舊。`;
+    if(mode==='reducing')$('resultContent').querySelector('.result-caveat').textContent=`本例購入成本 ${fmt(model.cost)}、折舊率 ${model.rate*100}%、估計殘值 ${fmt(model.residual)}。第 ${model.rows.findIndex(r=>r.closing===model.residual)+1} 年已達殘值，其後毋須再折舊；累計折舊 ${fmt(model.rows.at(-1).accumulated)}。`;
     if(unlockOthers)$('resultContent').insertAdjacentHTML('beforeend','<div class="unlock-summary"><h2>兩種新切法已解鎖！</h2><p>餘額遞減法 · 按使用量法</p></div>');
     resultEmblem();
     $('resultMenuBtn').textContent='選擇其他切法';$('replayBtn').textContent='再挑戰一次';showScreen('resultScreen');
-    document.querySelectorAll('[data-result-piece]').forEach(c=>{const index=Number(c.dataset.resultPiece),r=model.rows[index],cc=c.getContext('2d'),max=Math.max(...model.rows.map(v=>v.depreciation)),width=max?r.depreciation/max*140:0;if(width>0)Art.drawLong(cc,mode==='straight'?'watermelon':'papaya',(160-width)/2,25,width,65);else{cc.fillStyle='#94a6b9';cc.font='bold 18px sans-serif';cc.textAlign='center';cc.fillText('休息 · $0',80,65);}});
+    document.querySelectorAll('[data-result-piece]').forEach(c=>{const index=Number(c.dataset.resultPiece),r=model.rows[index],cc=c.getContext('2d'),max=Math.max(...model.rows.map(v=>v.depreciation)),width=max?r.depreciation/max*140:0;if(width>0)Art.drawLong(cc,mode==='straight'?'watermelon':'papaya',(160-width)/2,25,width,65);else{cc.fillStyle='#94a6b9';cc.font='bold 16px sans-serif';cc.textAlign='center';cc.fillText(mode==='usage'?'休息 · $0':'已達殘值 · $0',80,65);}});
     const rindCanvas=$('resultContent').querySelector('[data-result-residual]');if(rindCanvas){const cc=rindCanvas.getContext('2d');cc.setTransform(2,0,0,2,0,0);Art.drawRind(cc,10,25,140,65);}
   }
   function pause(){if(!isPlaying())return;previousState=state;state=STATES.PAUSED;gesture=null;overlay('<div class="overlay-card"><span class="eyebrow">TAKE A BREAK</span><h2>休息一下</h2><p>時間已暫停，準備好再開切。</p><button class="primary-button" id="resumeBtn">繼續遊戲</button><button class="secondary-button" id="pauseHomeBtn">返回主選單</button></div>');$('resumeBtn').onclick=resume;$('pauseHomeBtn').onclick=menu;}
@@ -254,7 +254,7 @@
   function trayInfo(){const n=level.model.rows.length,gap=W<520?8:14,tw=(W*.88-gap*(n-1))/n;return{n,gap,tw,x:W*.06,y:H*.72,h:H*.21};}
   function trayScale(){const largest=Math.max(...level.model.rows.map(r=>r.depreciation)),full=W*.84;return largest?Math.min(.58,(trayInfo().tw-12)/(full*largest/level.model.cost)):.58;}
   function drawTrays(){
-    const t=trayInfo(),scale=trayScale();for(let i=0;i<t.n;i++){const row=level.model.rows[i],x=t.x+i*(t.tw+t.gap);ctx.fillStyle='#ffffff05';rounded(x,t.y,t.tw,t.h,12);ctx.fill();ctx.strokeStyle=level.index===i?'#74e6c759':'#ffffff12';ctx.lineWidth=1;ctx.stroke();text(String(row.year),x+t.tw*.5,t.y+16,W<520?12:14,'#9aafbd');const piece=level.pieces.find(p=>p.index===i);if(piece){const width=geometry().full*piece.fraction*scale;if(width>0)Art.drawLong(ctx,mode==='straight'?'watermelon':'papaya',x+(t.tw-width)/2,t.y+28,width,Math.max(14,t.h-58));else text('休息',x+t.tw/2,t.y+t.h*.5,14,'#92a6b6');text(fmt(row.depreciation),x+t.tw/2,t.y+t.h-15,W<520?11:15,'#ffe18a');}}
+    const t=trayInfo(),scale=trayScale();for(let i=0;i<t.n;i++){const row=level.model.rows[i],x=t.x+i*(t.tw+t.gap);ctx.fillStyle='#ffffff05';rounded(x,t.y,t.tw,t.h,12);ctx.fill();ctx.strokeStyle=level.index===i?'#74e6c759':'#ffffff12';ctx.lineWidth=1;ctx.stroke();text(String(row.year),x+t.tw*.5,t.y+16,W<520?12:14,'#9aafbd');const piece=level.pieces.find(p=>p.index===i);if(piece){const width=geometry().full*piece.fraction*scale;if(width>0)Art.drawLong(ctx,mode==='straight'?'watermelon':'papaya',x+(t.tw-width)/2,t.y+28,width,Math.max(14,t.h-58));else text(mode==='usage'?'休息':'已達殘值',x+t.tw/2,t.y+t.h*.5,W<520?10:14,'#92a6b6');text(fmt(row.depreciation),x+t.tw/2,t.y+t.h-15,W<520?11:15,'#ffe18a');}}
   }
   function drawLearning(){
     if(!level)return;const g=level.anim?.g||geometry();drawTrays();
@@ -266,7 +266,7 @@
       ctx.save();ctx.translate(g.x+(destX-g.x)*t,g.y+(destY-g.y)*t);ctx.scale(1-(1-scale)*t,1-.45*t);ctx.translate(-g.x,-g.y);fruitSegment(g,0,g.cut);ctx.restore();
     }else{fruitSegment(g,0,g.width);if(settings.hints&&g.row.depreciation>0){const target=g.x+g.cut,pulse=.65+.35*Math.sin(performance.now()/230);ctx.save();ctx.setLineDash([6,6]);ctx.lineWidth=3;ctx.strokeStyle=`rgba(164,255,221,${pulse})`;ctx.shadowColor='#9affda';ctx.shadowBlur=12;ctx.beginPath();ctx.moveTo(target,g.y-20);ctx.lineTo(target,g.y+g.h+20);ctx.stroke();ctx.restore();text('↓',target,g.y-36,27,'#9affda');}}
     if(g.residual&&g.width>g.residual){const rx=g.x+g.width-g.residual/2;text('殘值',rx,g.y+g.h*.5,clamp(g.residual*.24,11,16),'#0b452d');}
-    if(g.row.depreciation===0&&!level.anim){ctx.fillStyle='#101b2cdd';rounded(W*.18,g.y-12,W*.64,g.h+28,16);ctx.fill();text('工廠休息',W*.5,g.y+g.h*.35,W<520?25:32,'#a9e9de');text('使用 0 次 → 折舊 $0',W*.5,g.y+g.h*.72,W<520?15:20,'#ffe18a');}
+    if(g.row.depreciation===0&&!level.anim){ctx.fillStyle='#101b2cdd';rounded(W*.18,g.y-12,W*.64,g.h+28,16);ctx.fill();text(mode==='usage'?'工廠休息':'已達殘值',W*.5,g.y+g.h*.35,W<520?25:32,'#a9e9de');text(mode==='usage'?'使用 0 次 → 折舊 $0':`保留 ${fmt(level.model.residual)} · 本年折舊 $0`,W*.5,g.y+g.h*.72,W<520?14:20,'#ffe18a');}
   }
   function drawEffects(){
     for(const e of explosions){const t=clamp(e.age/.55,0,1),radius=e.r*(1+3*t);ctx.save();ctx.globalAlpha=1-t;const glow=ctx.createRadialGradient(e.x,e.y,0,e.x,e.y,radius);glow.addColorStop(0,'#ffe8b0');glow.addColorStop(.4,'#ff9946b0');glow.addColorStop(1,'#ff654000');ctx.fillStyle=glow;ctx.beginPath();ctx.arc(e.x,e.y,radius,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#ffc873';ctx.lineWidth=4*(1-t)+1;ctx.beginPath();ctx.arc(e.x,e.y,radius*.85,0,Math.PI*2);ctx.stroke();ctx.restore();}
